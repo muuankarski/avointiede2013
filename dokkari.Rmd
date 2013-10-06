@@ -1,0 +1,148 @@
+% Avoimen tieteen käytännöt tutkimustyössä
+% Markus Kainu
+% Turku, Lokakuu 10, 2013
+
+# Sisältö
+
+# Demo
+
+## Ladataan data Google Drivesta ja käsitellään hieman
+
+```{rdocloadgoogle}
+library(RCurl)
+# myCsv <- getURL("https://docs.google.com/spreadsheet/pub?key=0AqQZEZLGjzKAdHlaelpHU2VDR3V1blNfeExma19keFE&output=csv")
+# dat <- read.csv(textConnection(myCsv), na.strings = "")
+# save(dat, file="dat.RData")
+load("dat.RData")
+
+names(dat) <- c("aika","tieteenala",
+               "empiriaPainot","teoriaPainot",
+                "laadulPainot","dataAvointa",
+               "yksinTyo","OaYleinen",
+                "AtMahdollisuus","kunta")
+#df <- dat[-1:-11,]
+df <- dat
+library(stringr)
+df$aika <- as.character(df$aika)
+df$pvm <- str_trim(str_sub(df$aika, 1, 10))
+df$pvm <- as.Date(df$pvm, format="%d.%m.%Y")
+```
+
+## Data vastaukset 1-5 ja muuttujat 7-11
+
+```{rdocprintdata}
+df[1:5,7:11]
+```
+
+
+## Vastausten kertyminen
+
+```{rdocplotdensity, fig.width=14, fig.height=6}
+library(ggplot2)
+ggplot(df, aes(x=pvm)) + 
+  geom_bar()
+
+```
+
+
+## Tieteenala
+
+```{rdocplotfield, fig.width=14, fig.height=6}
+library(ggplot2)
+ggplot(df, aes(x=tieteenala)) + 
+  geom_bar()
+
+```
+
+
+## Vastaukset kysymyksiin
+
+```{rdocplotlikert, echo=FALSE,fig.width=14, fig.height=10}
+source(url("http://www.strengejacke.de/R-Stuff/sjPlotLikert_0_4.R"))
+likert_dat <- df[,3:9]
+likert_dat <- as.data.frame(5 -as.matrix(likert_dat))
+
+likert_levels <- list(c("täysin eri mieltä",
+                      "osittain eri mieltä",
+                      "osittain samaa mieltä",
+                      "täysin samaa mieltä"))
+
+items <- list(names(likert_dat))
+sjp.likert(likert_dat, 
+           legendLabels=likert_levels, 
+           axisLabels.x=items, 
+           theme="minimal")
+```
+
+
+## Vastaajien synnyinpaikka
+
+```{rdocmungespatial, echo=FALSE}
+# geokoodataan syntymäpaikat
+library(ggmap)
+location <- unique(as.character(df$kunta))
+code <- geocode(location, output = c("latlon", "latlona", "more", "all"), messaging = FALSE, 
+    sensor = FALSE, override_limit = FALSE)
+spat.data <- cbind(location, code)
+# Ladataan Suomen valtion rahat GADM-tietokannasta
+#load(url("http://gadm.org/data/rda/FIN_adm0.RData"))
+#source("shapefile_operations.R")
+load("gadm.df.RData")
+
+# kotipaikkadata
+kunta <- as.data.frame(df$kunta)
+names(kunta) <- "kunta"
+kunta.dat <- merge(kunta,spat.data,by.x="kunta",
+                   by.y="location")
+```
+
+```{rdocplotspatial, echo=FALSE, fig.width=14, fig.height=10}
+ggplot(gadm.df, aes(long,lat,group=group)) +
+  geom_polygon(fill="Azure 1", color = "Dark Gray") + 
+  geom_point(data=kunta.dat, 
+             aes(lon,lat, group=kunta), 
+             size=3, shape=1,
+             position=position_jitter(width=.1,height=.1)) +
+  coord_map(project="orthographic") + 
+  geom_text(data=spat.data, aes(lon, lat, label = location, 
+                                group=location), 
+            size=3, color="black", hjust=0.5, vjust=-2.0) +
+  theme_minimal() +
+  theme(legend.position = "none")
+
+
+```
+
+## Tekstiasiakirjat perustuen samaan koodipohjaan
+
+```{rdoc, eval=FALSE}
+library(knitr)
+knit("dokkari.Rmd")
+system("pandoc dokkari.md -o dokkari.pdf")
+system("pandoc dokkari.md -o dokkari.odt")
+system("pandoc -s dokkari.md -o dokkari.html")
+```
+
+
+
+
+
+## Yhteenveto demosta
+
+Demossa käytettiin osin avointa dataa ja avoimia menetelmiä
+
+### avoin data
+- kuntien paikkatieto googlesta (`geocoding`-funktiolla)
+- Suomen paikkatietoaineisto [GADM](http://www.gadm.org/)-tietokannasta
+- tutkimusdata googlen lomakkeesta (ei-avoin)
+
+### avoimet menetelmät
+- [R-laskentaympäristö](http://r-project.org)
+- [Rstudio IDE](http://www.rstudio.com/ide/) -käyttöliittymä
+- liuta r-paketteja
+- [pandoc](http://johnmacfarlane.net/pandoc/) - dokumentin kääntäjä
+
+## Yhteenveto demosta
+
+- Avoimet analyysiohjelmistot vahvoja toistettavien/dynaamisten tutkimusraporttien (paperit,esitysgrafiikka,tms.) teossa
+- dynaamisuuden edut: kun data tai analyysikoodi muuttuu, niin julkaisu on aina ajan tasalla

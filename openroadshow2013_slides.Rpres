@@ -1,0 +1,549 @@
+Avoimen tieteen käytännöt tutkimustyössä
+========================================================
+author: Open Knowledge Roadshow 2013
+date: Turussa, 10. lokakuuta 2013
+css: ../../../template/rpresentation/slides.css
+
+<strong><a href="http://markuskainu.fi">Markus Kainu</a></strong>
+</br>
+*sosiaalipolitiikan tohtorikoulutettava*,</br>
+[Sosiaalitieteiden laitos, Turun yliopisto](http://www.utu.fi/fi/yksikot/soc/yksikot/sosiaalitieteet/Sivut/home.aspx)
+</br>
+[Aleksanteri instituutti, Helsingin yliopisto](http://helsinki.fi/aleksanteri)
+
+<a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a>
+
+Linkit
+========================================================
+- [http://rpubs.com/muuankarski/9119](http://rpubs.com/muuankarski/9119)
+- [Ennakkokysely](https://docs.google.com/forms/d/1jFfj0d6vDF0kQWlJ6zuilh513y9-09hAuReNrENfBQg/viewform)
+- [Roadshown avoimen tieteen etherpad](http://new.okfnpad.org/p/Tutkimusdatan_julkaisun_hallinta)
+- [okroadshowturku.eventbrite.com](https://okroadshowturku.eventbrite.com/) 
+- [Avoimen tieteen työryhmä OKFN LOCAL: Finland](http://fi.okfn.org/wg/openscience/)
+
+Sisältö
+========================================================
+1. Avoin tiede ja avoimen tieteen koulukunnat
+2. Demo: dynaamiset julkaisut avoimilla menetelmillä
+3. Erään paperin anatomia
+
+1. Avoin tiede ja avoin tieteellinen tieto
+========================================================
+title: false
+<h1 style="text-align:center;padding-top:200px;">1. Avoin tiede ja avoin tieteellinen tieto</h1>
+
+
+Avoin tiede
+========================================================
+incremental:false
+- Avoin tiede (open science) on kattotermi liikkeelle, joka pyrkii edistämään avoimia toimintamalleja tieteellisessä tutkimuksessa. 
+- Keskeinen tavoite on tutkimustulosten, tutkimusdatan ja tutkimuksessa käytettyjen menetelmien julkaiseminen avoimella lisenssillä siten, että ne ovat vapaasti kaikkien halukkaiden tarkasteltavissa sekä käytettävissä.
+
+*Lähde: [Wikipedia: Avoin tiede](http://fi.wikipedia.org/wiki/Avoin_tiede)*
+
+Avoin tiede sisältää käytäntöjä, kuten 
+========================================================
+incremental:false
+- tutkimusjulkaisujen avoimen saatavuuden (ks. open access) edistäminen, 
+- tutkimusaineistojen avoin julkaiseminen, 
+- avoimen lähdekoodin ja avoimien standardien hyödyntäminen, sekä 
+- tutkimusprosessin julkinen dokumentointi niin kutsutun avoimen muistikirjan menetelmällä.
+
+*Lähde: [Wikipedia: Avoin tiede](http://fi.wikipedia.org/wiki/Avoin_tiede)*
+
+Avoinen tieteen päähyödyt
+========================================================
+incremental:false
+Resurssien jakamisen myötä tapahtuva:
+
+- tieteen kehityksen nopeutuminen, 
+- tutkimuskäytäntöjen läpinäkyvyyden lisääntymisestä johtuva laadun ja tutkimuksen toistettavuuden parantuminen, sekä 
+- tutkimustulosten paremman saavutettavuuden myötä lisääntyvä yhteiskunnallinen vaikuttavuus. 
+- Tutkimusaineistojen vapaa jakaminen saattaa myös lisätä viittauksia tehtyyn tutkimustyöhön
+
+*Lähde: [Wikipedia: Avoin tiede](http://fi.wikipedia.org/wiki/Avoin_tiede)*
+
+Avoin tiede ja eri tieteenalat
+========================================================
+- yksittäinen tutkija vs. tutkijaryhmät
+   - tutkimusryhmä
+   - riskinotto
+   - tieteealaluokitus (kato joku kertyvät yms.)
+- tsekkaan sen itävaltyalaisen gethubista sopivat jutut. ja Joonan esityksestä   
+
+Avoimen tieteen koulukunnat
+===================================
+<table>
+<thead>
+<tr class="header">
+<th align="left">Koulukunta</th>
+<th align="left">Keskeinen näkemys</th>
+<th align="left">Mukana olevat tahot</th>
+<th align="left">Keskeinen tavoite</th>
+<th align="left">Työkalut ja metodi</th>
+</tr>
+<<<<<<< HEAD
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Yhteiskunnallinen koulukunta (public)</td>
+<td align="left">Tieteen tulee olla paremmin suuren yleisön saavutettavissa</td>
+<td align="left">Tutkijat &amp; kansalaiset</td>
+<td align="left">Tehdä tiede saavutettavaksi kansalaisille</td>
+<td align="left">Kansalaistiede, tiedeviestintä, tiedebloggaus</td>
+=======
+<tr>
+<td><b>Demokratian koulukunta</td></b>
+<td>Tiedon saavutettavuus on eriarvoista jakautunutta</td>
+<td>Tutkijat, poliitikot, kansalaiset</td>
+<td>Tiedon avaaminen ilmaiseksi kaikille</td>
+<td>Open access, tekijänoikeudet, avoin data, avoin koodi</td>
+>>>>>>> 5e8d9c881588a7e3c18b68ba14dd449be0d5882b
+</tr>
+<tr class="even">
+<td align="left">Demokratian koulukunta (democratic)</td>
+<td align="left">Tiedon saavutettavuus on eriarvoista jakautunutta</td>
+<td align="left">Tutkijat, poliitikot, kansalaiset</td>
+<td align="left">Tiedon avaaminen ilmaiseksi kaikille</td>
+<td align="left">Open access, tekijänoikeudet, avoin data, avoin koodi</td>
+</tr>
+<tr class="odd">
+<td align="left">Pragmaattinen koulukunta (pragmatic)</td>
+<td align="left">Yhteistyö lisäisi tieteellisen tiedon tuottaminen tehokkuutta</td>
+<td align="left">Tutkijat</td>
+<td align="left">Tiedon tuottamisen prosessien avaaminen</td>
+<td align="left">kollektiivinen älykkyys, verkostovaikutus, avoin data, avoin koodi</td>
+</tr>
+<tr class="even">
+<td align="left">Infrastruktuurin koulukunta (infrastructure)</td>
+<td align="left">Tehokas tutkimus on riippuvainen saatavilla olevista työkaluista ja sovelluksista</td>
+<td align="left">Tutkijat &amp; alustojen tuottajat</td>
+<td align="left">Luoda avoimia alustoja, työkaluja ja palveluita tutkijoille</td>
+<td align="left">Yhteistyön alustat ja työkalut</td>
+</tr>
+<tr class="odd">
+<td align="left">Vaikuttavuuden mittaamisen koulukunta (measurement)</td>
+<td align="left">Tieteellisten julkaisujen vaikuttavuuden mittaaminen vaatii vaihtoehtosia tapoja</td>
+<td align="left">Tutkijat &amp; poliitikot</td>
+<td align="left">Kehittää vaihtoehtoisia mittaustapoja tieteellisen vaikuttavuuden mittaamiseen</td>
+<td align="left">artikkelitasoinen metriikka, vertaisarviointi, vittaaminen, vaikuttavuuskerroin</td>
+</tr>
+</tbody>
+</table>
+
+*Lähde: [Fecher & Friesike. (2013) Open Science: One Term, Five Schools of Thought.](http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2272036)*
+
+
+1. Yhteiskunnallinen koulukunta
+========================================================
+incremental:false
+
+Sekä tieteenteon prosessi että tieteenteon tulokset tulisivat olla laajemman yleisön saatavilla
+
+- Kansalaistiede
+- Tieteen kansantajuistaminen
+
+
+2. Demokratian koulukunta
+========================================================
+incremental:false
+
+Kaikilla tulisi olla yhdenmukainen pääsy **tietoon**, etenkin jos se on tuotettu julkisin varoin
+
+- Avoin (tieteellinen) data
+    - synergiaedut datan ja analyysikoodin jakamisesta
+    - datan keräämisen päällekkäisyys
+- Open Access -julkaiseminen
+    - OA julkaisumallit: [vihreä](http://en.wikipedia.org/wiki/Self-archiving), [kultainen](http://en.wikipedia.org/wiki/Open-access_journal), [hybridi](http://en.wikipedia.org/wiki/Hybrid_open_access_journal)
+    - rahoitus 
+    - vertaisarviointi
+    
+3. pragmaattinen koulukunta
+========================================================
+incremental:false
+
+Avoimen tieteen menetelmin tutkimuksen tekemisestä ja tiedon jakamisestä on mahdollista tehdä tehokkaampaa
+
+- erilaiset online kollaboroinnin välineet
+sosiaalinen tiede, laajempi kollaborointi
+- github
+- 
+
+4. Tieteenteon infrastruktuurin koulukunta
+========================================================
+incremental:false
+>Avoin tiede nähdään teknologisena haasteena. Ollaan kiinnostuneita teknisestä infrastruktuurista joka mahdollistaa uusien tieteellisten käytäntöjen hyödyntämisen internetissä
+
+### Hajautettu laskenta
+
+
+### Sosiaaliset kollaboraation verkostot
+
+
+5. Tieteellisen vaikuttavuuden mittaamisen koulukunta
+========================================================
+incremental:false
+>Kiinnostunut tutkimuksen tieteellisen vaikuttavuuden vaihtoehtoisista mittaustavoista 
+
+Impact factor -mittaustavan kritiikki:
+- vertaisarviointi on aikaavievää
+- vaikuttavuus on yhteydessä enemmän lehteen kuin mitä artikkeliin
+- uudet julkaisumuodot (online OA journaalit, blogit) eivät ole mukana impact factor -mittaustavassa
+
+
+
+2. Demo: dynaamiset julkaisut avoimilla menetelmillä
+========================================================
+title: false
+<h1 style="text-align:center;padding-top:200px;">2. Demo: dynaamiset julkaisut avoimilla menetelmillä</h1>
+
+
+Ladataan data Google Drivesta ja käsitellään hieman
+========================================================
+```{rloadgoogle, eval=TRUE}
+library(RCurl)
+# myCsv <- getURL("https://docs.google.com/spreadsheet/pub?key=0AqQZEZLGjzKAdHlaelpHU2VDR3V1blNfeExma19keFE&output=csv")
+# dat <- read.csv(textConnection(myCsv), na.strings = "")
+# save(dat, file="dat.RData")
+load("dat.RData")
+names(dat) <- c("aika","tieteenala",
+               "empiriaPainot","teoriaPainot",
+                "laadulPainot","dataAvointa",
+               "yksinTyo","OaYleinen",
+                "AtMahdollisuus","kunta")
+#df <- dat[-1:-11,]
+df <- dat
+library(stringr)
+df$aika <- as.character(df$aika)
+df$pvm <- str_trim(str_sub(df$aika, 1, 10))
+df$pvm <- as.Date(df$pvm, format="%d.%m.%Y")
+```
+
+Data vastaukset 1-5 ja muuttujat 7-11
+========================================================
+```{rprintdata, eval=TRUE}
+df[1:5,7:11]
+```
+
+
+Vastausten kertyminen
+========================================================
+```{rplotdensity, fig.width=14, fig.height=6, eval=TRUE}
+library(ggplot2)
+ggplot(df, aes(x=pvm)) + 
+  geom_bar()
+
+```
+
+
+Tieteenala
+========================================================
+```{rplotfield, fig.width=14, fig.height=6, eval=TRUE}
+library(ggplot2)
+ggplot(df, aes(x=tieteenala)) + 
+  geom_bar()
+
+```
+
+
+Vastaukset kysymyksiin
+========================================================
+```{rplotlikert, echo=FALSE,fig.width=14, fig.height=10, eval=TRUE}
+source(url("http://www.strengejacke.de/R-Stuff/sjPlotLikert_0_4.R"))
+likert_dat <- df[,3:9]
+likert_dat <- as.data.frame(5 -as.matrix(likert_dat))
+
+likert_levels <- list(c("täysin eri mieltä",
+                      "osittain eri mieltä",
+                      "osittain samaa mieltä",
+                      "täysin samaa mieltä"))
+
+items <- list(names(likert_dat))
+sjp.likert(likert_dat, 
+           legendLabels=likert_levels, 
+           axisLabels.x=items, 
+           theme="minimal")
+```
+
+
+Vastaajien synnyinpaikka
+========================================================
+```{rmungespatial, echo=FALSE, eval=TRUE}
+# geokoodataan syntymäpaikat
+library(ggmap)
+location <- unique(as.character(df$kunta))
+code <- geocode(location, output = c("latlon", "latlona", "more", "all"), messaging = FALSE, 
+    sensor = FALSE, override_limit = FALSE)
+spat.data <- cbind(location, code)
+# Ladataan Suomen valtion rahat GADM-tietokannasta
+#load(url("http://gadm.org/data/rda/FIN_adm0.RData"))
+#source("shapefile_operations.R")
+load("gadm.df.RData")
+# kotipaikkadata
+kunta <- as.data.frame(df$kunta)
+names(kunta) <- "kunta"
+kunta.dat <- merge(kunta,spat.data,by.x="kunta",
+                   by.y="location")
+```
+
+```{rplotspatial, echo=FALSE, fig.width=14, fig.height=10, eval=TRUE}
+ggplot(gadm.df, aes(long,lat,group=group)) +
+  geom_polygon(fill="Azure 1", color = "Dark Gray") + 
+  geom_point(data=kunta.dat, 
+             aes(lon,lat, group=kunta), 
+             size=3, shape=1,
+             position=position_jitter(width=.1,height=.1)) +
+  coord_map(project="orthographic") + 
+  geom_text(data=spat.data, aes(lon, lat, label = location, 
+                                group=location), 
+            size=3, color="black", hjust=0.5, vjust=-2.0) +
+  theme_minimal() +
+  theme(legend.position = "none")
+
+
+```
+
+Tekstiasiakirjat perustuen samaan koodipohjaan
+========================================================
+
+
+
+```{r, eval=TRUE}
+library(knitr)
+knit("dokkari.Rmd")
+system("pandoc dokkari.md -o dokkari.pdf")
+system("pandoc dokkari.md -o dokkari.odt")
+system("pandoc -s dokkari.md -o dokkari.html")
+```
+
+
+
+
+
+Yhteenveto demosta
+========================================================
+incremental:false
+Demossa käytettiin osin avointa dataa ja avoimia menetelmiä
+
+### avoin data
+- kuntien paikkatieto googlesta (`geocoding`-funktiolla)
+- Suomen paikkatietoaineisto [GADM](http://www.gadm.org/)-tietokannasta
+- tutkimusdata googlen lomakkeesta (ei-avoin)
+
+### avoimet menetelmät
+- [R-laskentaympäristö](http://r-project.org)
+- [Rstudio IDE](http://www.rstudio.com/ide/) -käyttöliittymä
+- liuta r-paketteja
+- [pandoc](http://johnmacfarlane.net/pandoc/) - dokumentin kääntäjä
+
+Yhteenveto demosta
+========================================================
+incremental:false
+- Avoimet analyysiohjelmistot vahvoja toistettavien/dynaamisten tutkimusraporttien (paperit,esitysgrafiikka,tms.) teossa
+- dynaamisuuden edut: kun data tai analyysikoodi muuttuu, niin julkaisu on aina ajan tasalla
+
+
+3. Erään paperin anatomia
+========================================================
+title: false
+<h1 style="text-align:center;padding-top:200px;">3. Erään paperin anatomia</h1>
+
+
+
+
+
+
+
+
+Hyllytetyt diat
+========================================================
+title: false
+<h1 style="text-align:center;padding-top:200px;">Hyllytetyt diat</h1>
+
+In past five years
+========================================================
+incremental:false
+1. How many new it-system have you adopted for bureaucratic purposes?
+2. How many new it-system have you adopted for analytical purposes?
+
+Who makes the choice of the methods we (are allowed to) use?
+
+My software environment
+========================================================
+incremental:false
+- All free and open source software
+- Writings, presentations, code - all as **plain text**
+
+### I use
+
+- [linux](http://www.linuxfoundation.org/) operating system
+- [markdown](http://daringfireball.net/projects/markdown/) for typesetting using any text editor (notepad)
+- [pandoc](http://johnmacfarlane.net/pandoc/) for converting the plain text into any format (.docx,.pdf,.ppt,.html,.epub,..)
+- [R](http://www.r-project.org/) for data analysis, statistical analysis & graphics
+- [.git](http://git-scm.com/) for version control
+
+Why FOSS?
+========================================================
+incremental:false
+1. able to build the environment on any computer
+2. able to teach my analytical work (quantitative) to anyone with no software costs or licence constrains
+3. long-term compatibility of file formats and standards
+
+### freedom & affordability & performance
+
+Case: The R project
+========================================================
+title: false
+<h1 style="text-align:center;padding-top:200px;">Case: The R project</h1>
+
+<!--
+Prime example of what internets makes possible
+
+-->
+
+The R project for statistical computing
+========================================================
+- [r-project.org/](http://www.r-project.org/)
+- free and open source
+- maintained and supported by thousands of individuals who use it and who contribute to its ongoing development 
+- ~ 6500+ user created packages available
+
+```{r, echo=FALSE, results='asis'}
+Software <- c("R","SAS","Stata","Others")
+n.of.blogs <- c(452,40,8,"0-3")
+tbl <- data.frame(Software,n.of.blogs)
+library(xtable)
+print.xtable(xtable(tbl), type="html")
+```
+
+Number of blogs devoted to each software package on May 12, 2013. **Source:** [r4stats.com -blog](http://r4stats.com/)
+
+Number of posts per software on each statistics forum on 2/10/2013.
+========================================================
+![](figures/stack.png)
+Source: [r4stats.com -blog](http://r4stats.com/)
+
+
+***
+
+- [stackoverflow.com](http://stackoverflow.com/)
+- [Cross Validated](http://stats.stackexchange.com/)
+- [talkstats.com](http://www.talkstats.com/)
+
+An analysis of the r-help mailing list
+========================================================
+![](figures/r-help1.png)
+
+Video
+========================================================
+title: false
+<h1 style="text-align:center;padding-top:200px;">Video: </br><a href="http://www.youtube.com/embed/TR2bHSJ_eck">R: The most powerful and most widely used statistical software</a></h1>
+
+
+====================================
+<table>
+<tr>
+<th>School of thought</th>
+<th>Central assumption</th>
+<th>Involved groups</th>
+<th>Central Aim</th>
+<th>Tools & Methods</th>
+</tr>
+<tr>
+<td><b>Democratic</td></b>
+<td>The access to knowledge is unequally distributed.</td>
+<td>Scientists, polititians, citizens</td>
+<td>Making knowledge freely available for everyone.</td>
+<td>Open access, intellectual property rights, Open data, Open code</td>
+</tr>
+<tr>
+<td><b>Pragmatic</b></td>
+<td> Knowledge creation could be more efficient if scientists collaborated.</td>
+<td>Scientists </td>
+<td>Opening up the process of knowledge creation.</td>
+<td>Wisdom of the crowds, network effects, Open Data, Open Code</td>
+</tr>
+<tr>
+<td><b>Infrastructure</b></td>
+<td>Efficient research depends on the available tools and applications.</td>
+<td>Scientists & platform providers</td>
+<td>Creating openly available platforms, tools and services for scientists.</td>
+<td>Collaboration platforms and tools</td>
+</tr>
+<tr>
+<td><b>Public</b></td>
+<td>Science needs to be made accessible to the public.</td>
+<td>Scientists & citizens</td>
+<td>Making science accessible for citizens.</td>
+<td>Citizen Science, Science PR, Science Blogging</td>
+</tr>
+<tr>
+<td><b>Measurement</b></td>
+<td>Scientific contributions today need alternative impact measurements.</td>
+<td>Scientists & politicians</td>
+<td>Developing an alternative metric system for scientific impact.</td>
+<td>Altmetrics, peer review, citation, impact factors</td>
+</tr>
+</table>
+
+
+
+1. Yhteiskunnallinen koulukunta
+========================================================
+incremental:false
+
+Sekä tieteenteon prosessi että tieteenteon tulokset tulisivat olla laajemman yleisön saatavilla
+
+- Kansalaistiede
+- Tieteen kansantajuistaminen
+
+
+2. Demokratian koulukunta
+========================================================
+incremental:false
+
+Kaikilla tulisi olla yhdenmukainen pääsy **tietoon**, etenkin jos se on tuotettu julkisin varoin
+
+- Avoin (tieteellinen) data
+    - synergiaedut datan ja analyysikoodin jakamisesta
+    - datan keräämisen päällekkäisyys
+- Open Access -julkaiseminen
+    - OA julkaisumallit: [vihreä](http://en.wikipedia.org/wiki/Self-archiving), [kultainen](http://en.wikipedia.org/wiki/Open-access_journal), [hybridi](http://en.wikipedia.org/wiki/Hybrid_open_access_journal)
+    - rahoitus 
+    - vertaisarviointi
+    
+3. pragmaattinen koulukunta
+========================================================
+incremental:false
+
+Avoimen tieteen menetelmin tutkimuksen tekemisestä ja tiedon jakamisestä on mahdollista tehdä tehokkaampaa
+
+- erilaiset online kollaboroinnin välineet
+sosiaalinen tiede, laajempi kollaborointi
+- github
+- 
+
+4. Tieteenteon infrastruktuurin koulukunta
+========================================================
+incremental:false
+>Avoin tiede nähdään teknologisena haasteena. Ollaan kiinnostuneita teknisestä infrastruktuurista joka mahdollistaa uusien tieteellisten käytäntöjen hyödyntämisen internetissä
+
+### Hajautettu laskenta
+
+
+### Sosiaaliset kollaboraation verkostot
+
+
+5. Tieteellisen vaikuttavuuden mittaamisen koulukunta
+========================================================
+incremental:false
+>Kiinnostunut tutkimuksen tieteellisen vaikuttavuuden vaihtoehtoisista mittaustavoista 
+
+Impact factor -mittaustavan kritiikki:
+- vertaisarviointi on aikaavievää
+- vaikuttavuus on yhteydessä enemmän lehteen kuin mitä artikkeliin
+- uudet julkaisumuodot (online OA journaalit, blogit) eivät ole mukana impact factor -mittaustavassa
+
+X. Avoimen tieteen teoreettinen koulukunta
+========================================================
+incremental:false
