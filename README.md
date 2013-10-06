@@ -9,42 +9,6 @@ Täältä löytyy slaidien lähdekoodi, linkkejä sekä demon aineistot ja koodi
 - [Avoimen tieteen etherpad](http://new.okfnpad.org/p/Tutkimusdatan_julkaisun_hallinta) - täytä omat tietosi jos haluat ja lue ja editoi dokumenttia)
 - Turun osakilpailun tapahtumasivut [okroadshowturku.eventbrite.com](https://okroadshowturku.eventbrite.com/) 
 
-<table>
-<thead>
-<tr class="header">
-<th align="left">Author, (Year), Type of Publication</th>
-<th align="left">Title</th>
-<th align="left">Content</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">Altunay et all. (2011) Article</td>
-<td align="left">A Science Driven Production Cyberinfrastructure - the Open Science Grid</td>
-<td align="left">Science grid can be used for high-throughput research projects. <em>“This article describes the Open Science Grid, a large distributed computational infrastructure in the United States which supports many different high-troughput scientific applications (...) to form multi-domain integrated distributed systems for science.” ( p. 201)</em></td>
-</tr>
-<tr class="even">
-<td align="left">De Roure et al. (2010) Conference Paper</td>
-<td align="left">Towards open science: the myExperiment approach</td>
-<td align="left"><em>“myExperiment is the first repository of methods which majors on the social dimension, and we have demonstrated that an online community and workflow collection has been established and is now growing around it.” (p. 2350)</em></td>
-</tr>
-<tr class="odd">
-<td align="left">Foster (2003) Journal Article</td>
-<td align="left">The grid: A new infrastructure for 21st century science</td>
-<td align="left">Computation is a major challenge for scientific collaboration in future. <em>“Driven by increasingly complex problems and by advances in understanding and technique, and powered by the emergence of the Internet (...), today’s science is as much based on computation, data analysis, and collaboration as on the efforts of individual experimentalists and theorists.” (p. 52)</em></td>
-</tr>
-<tr class="even">
-<td align="left">De Roure et al. (2003) Book Chapter</td>
-<td align="left">The Semantic Grid: A Future e-Science Infrastructure</td>
-<td align="left">Knowledge layer services are necessary for seamlessly automatiing a significant range of actions <em>“While there are still many open problems concerned with managing massively distributed computations in an efficient manner and in accessing and sharing information from heterogenous sources (...), we believe the full potential of Grid computing can only be realised by fully exploiting the functionality and capabilities provided by knowledge layer services.” (p. 432)</em></td>
-</tr>
-<tr class="odd">
-<td align="left">Hey &amp; Trefethen (2005) Article</td>
-<td align="left">Cyberinfrastructure for e-Science</td>
-<td align="left">Service-oriented science has the potential to increase individual and collective scientific productivity by making powerful information tools available to all, and thus enabling the widespread automation of data analysis and computation <em>“Although there is currently much focus in the Grid community on the lowlevel middleware, there are substantial research challenges for computer scientists to develop high-level intelligent middleware services that genuinely support the needs of scientists and allow them to routinely construct secure VOs and manage the veritable deluge of scientific data that will be generated in the next few years.” (p. 820)</em></td>
-</tr>
-</tbody>
-</table>
 
 ## Avoimen tieteen koulukunnat
 
