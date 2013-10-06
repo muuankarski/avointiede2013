@@ -74,6 +74,7 @@ Avoin tiede ja eri tieteenalat
 
 Avoimen tieteen koulukunnat
 ===================================
+
 <table>
 <thead>
 <tr class="header">
@@ -83,7 +84,6 @@ Avoimen tieteen koulukunnat
 <th align="left">Keskeinen tavoite</th>
 <th align="left">Työkalut ja metodi</th>
 </tr>
-<<<<<<< HEAD
 </thead>
 <tbody>
 <tr class="odd">
@@ -92,14 +92,6 @@ Avoimen tieteen koulukunnat
 <td align="left">Tutkijat &amp; kansalaiset</td>
 <td align="left">Tehdä tiede saavutettavaksi kansalaisille</td>
 <td align="left">Kansalaistiede, tiedeviestintä, tiedebloggaus</td>
-=======
-<tr>
-<td><b>Demokratian koulukunta</td></b>
-<td>Tiedon saavutettavuus on eriarvoista jakautunutta</td>
-<td>Tutkijat, poliitikot, kansalaiset</td>
-<td>Tiedon avaaminen ilmaiseksi kaikille</td>
-<td>Open access, tekijänoikeudet, avoin data, avoin koodi</td>
->>>>>>> 5e8d9c881588a7e3c18b68ba14dd449be0d5882b
 </tr>
 <tr class="even">
 <td align="left">Demokratian koulukunta (democratic)</td>
@@ -132,64 +124,8 @@ Avoimen tieteen koulukunnat
 </tbody>
 </table>
 
+
 *Lähde: [Fecher & Friesike. (2013) Open Science: One Term, Five Schools of Thought.](http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2272036)*
-
-
-1. Yhteiskunnallinen koulukunta
-========================================================
-incremental:false
-
-Sekä tieteenteon prosessi että tieteenteon tulokset tulisivat olla laajemman yleisön saatavilla
-
-- Kansalaistiede
-- Tieteen kansantajuistaminen
-
-
-2. Demokratian koulukunta
-========================================================
-incremental:false
-
-Kaikilla tulisi olla yhdenmukainen pääsy **tietoon**, etenkin jos se on tuotettu julkisin varoin
-
-- Avoin (tieteellinen) data
-    - synergiaedut datan ja analyysikoodin jakamisesta
-    - datan keräämisen päällekkäisyys
-- Open Access -julkaiseminen
-    - OA julkaisumallit: [vihreä](http://en.wikipedia.org/wiki/Self-archiving), [kultainen](http://en.wikipedia.org/wiki/Open-access_journal), [hybridi](http://en.wikipedia.org/wiki/Hybrid_open_access_journal)
-    - rahoitus 
-    - vertaisarviointi
-    
-3. pragmaattinen koulukunta
-========================================================
-incremental:false
-
-Avoimen tieteen menetelmin tutkimuksen tekemisestä ja tiedon jakamisestä on mahdollista tehdä tehokkaampaa
-
-- erilaiset online kollaboroinnin välineet
-sosiaalinen tiede, laajempi kollaborointi
-- github
-- 
-
-4. Tieteenteon infrastruktuurin koulukunta
-========================================================
-incremental:false
->Avoin tiede nähdään teknologisena haasteena. Ollaan kiinnostuneita teknisestä infrastruktuurista joka mahdollistaa uusien tieteellisten käytäntöjen hyödyntämisen internetissä
-
-### Hajautettu laskenta
-
-
-### Sosiaaliset kollaboraation verkostot
-
-
-5. Tieteellisen vaikuttavuuden mittaamisen koulukunta
-========================================================
-incremental:false
->Kiinnostunut tutkimuksen tieteellisen vaikuttavuuden vaihtoehtoisista mittaustavoista 
-
-Impact factor -mittaustavan kritiikki:
-- vertaisarviointi on aikaavievää
-- vaikuttavuus on yhteydessä enemmän lehteen kuin mitä artikkeliin
-- uudet julkaisumuodot (online OA journaalit, blogit) eivät ole mukana impact factor -mittaustavassa
 
 
 
