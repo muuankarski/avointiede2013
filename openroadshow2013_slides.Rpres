@@ -4,6 +4,7 @@ author: Open Knowledge Roadshow 2013
 date: Turussa, 10. lokakuuta 2013
 css: ../../../template/rpresentation/slides.css
 
+
 <strong><a href="http://markuskainu.fi">Markus Kainu</a></strong>
 </br>
 *sosiaalipolitiikan tohtorikoulutettava*,</br>
@@ -306,18 +307,13 @@ ggplot(gadm.df, aes(long,lat,group=group)) +
 Tekstiasiakirjat perustuen samaan koodipohjaan
 ========================================================
 
-
-
-```{r, eval=TRUE}
+```{r, eval=FALSE}
 library(knitr)
 knit("dokkari.Rmd")
 system("pandoc dokkari.md -o dokkari.pdf")
 system("pandoc dokkari.md -o dokkari.odt")
 system("pandoc -s dokkari.md -o dokkari.html")
 ```
-
-
-
 
 
 Yhteenveto demosta
