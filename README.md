@@ -367,6 +367,11 @@ Täältä löytyy slaidien lähdekoodi, linkkejä sekä demon aineistot ja koodi
 
 # Linkkejä
 
+- [okroadshowturku.eventbrite.com](https://okroadshowturku.eventbrite.com/) 
+- [Avoimen tieteen työryhmä OKFN LOCAL: Finland](http://fi.okfn.org/wg/openscience/)
+- [Avoimen tieteen Facebook-ryhmä](https://www.facebook.com/groups/241398182642057/)
+
+
 ## Avoin data
 
 - [Louhos: Lähdekoodia avointen suomalaisten datavirtojen seulontaan](http://louhos.github.io/)

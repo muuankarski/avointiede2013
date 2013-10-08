@@ -2,6 +2,7 @@ Avoimen tieteen käytännöt tutkimustyössä
 ========================================================
 author: Open Knowledge Roadshow 2013
 date: Turussa, 10. lokakuuta 2013
+transition: fade
 css: ../../../template/rpresentation/slides.css
 
 
@@ -12,19 +13,22 @@ css: ../../../template/rpresentation/slides.css
 </br>
 [Aleksanteri instituutti, Helsingin yliopisto](http://helsinki.fi/aleksanteri)
 
+
 <a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a>
 
-Linkit
-========================================================
-- [http://rpubs.com/muuankarski/9119](http://rpubs.com/muuankarski/9119)
-- [Ennakkokysely](https://docs.google.com/forms/d/1jFfj0d6vDF0kQWlJ6zuilh513y9-09hAuReNrENfBQg/viewform)
-- [Roadshown avoimen tieteen etherpad](http://new.okfnpad.org/p/Tutkimusdatan_julkaisun_hallinta)
-- [okroadshowturku.eventbrite.com](https://okroadshowturku.eventbrite.com/) 
-- [Avoimen tieteen työryhmä OKFN LOCAL: Finland](http://fi.okfn.org/wg/openscience/)
+====================================
+incremental:true
+* Miten julkaisen avoimesti? 
+* Miten avaan tutkimusdatani? 
+* Miksi siirtyisin käyttämään avoimia ohjelmistoja tutkimusaineistojen analysointiin? 
+* Mitä iloa on avoimuudesta tieteessä?
+* Mitä yksittäinen tutkija voi tehdä ja missä koko tieteen teon rakenteiden tulisi muuttua? 
+
 
 Sisältö
 ========================================================
 1. Avoin tiede ja avoimen tieteen koulukunnat
+2. Toistettavuus avoimen tieteen käytäntönä
 2. Demo: dynaamiset julkaisut avoimilla menetelmillä
 3. Erään paperin anatomia
 
@@ -45,10 +49,10 @@ incremental:false
 Avoin tiede sisältää käytäntöjä, kuten 
 ========================================================
 incremental:false
-- tutkimusjulkaisujen avoimen saatavuuden (ks. open access) edistäminen, 
-- tutkimusaineistojen avoin julkaiseminen, 
-- avoimen lähdekoodin ja avoimien standardien hyödyntäminen, sekä 
-- tutkimusprosessin julkinen dokumentointi niin kutsutun avoimen muistikirjan menetelmällä.
+- tutkimusjulkaisujen avoimen saatavuuden (open access) edistäminen, 
+- tutkimusaineistojen avoin julkaiseminen (open data), 
+- avoimen lähdekoodin (open source) ja avoimien standardien hyödyntäminen, sekä 
+- tutkimusprosessin julkinen dokumentointi niin kutsutun avoimen muistikirjan menetelmällä (open notebook science)
 
 *Lähde: [Wikipedia: Avoin tiede](http://fi.wikipedia.org/wiki/Avoin_tiede)*
 
@@ -57,23 +61,19 @@ Avoinen tieteen päähyödyt
 incremental:false
 Resurssien jakamisen myötä tapahtuva:
 
-- tieteen kehityksen nopeutuminen, 
-- tutkimuskäytäntöjen läpinäkyvyyden lisääntymisestä johtuva laadun ja tutkimuksen toistettavuuden parantuminen, sekä 
-- tutkimustulosten paremman saavutettavuuden myötä lisääntyvä yhteiskunnallinen vaikuttavuus. 
+- **tieteen kehityksen nopeutuminen**, 
+- tutkimuskäytäntöjen läpinäkyvyyden lisääntymisestä johtuva **laadun ja tutkimuksen toistettavuuden parantuminen**, sekä 
+- tutkimustulosten paremman saavutettavuuden myötä lisääntyvä **yhteiskunnallinen vaikuttavuus** 
 - Tutkimusaineistojen vapaa jakaminen saattaa myös lisätä viittauksia tehtyyn tutkimustyöhön
 
 *Lähde: [Wikipedia: Avoin tiede](http://fi.wikipedia.org/wiki/Avoin_tiede)*
 
-Avoin tiede ja eri tieteenalat
-========================================================
-- yksittäinen tutkija vs. tutkijaryhmät
-   - tutkimusryhmä
-   - riskinotto
-   - tieteealaluokitus (kato joku kertyvät yms.)
-- tsekkaan sen itävaltyalaisen gethubista sopivat jutut. ja Joonan esityksestä   
+- Avoimesti dokumentoitu tutkimus löytyy googlesta jo varhaisessa vaiheessa, mikä voi poikia uusia yhteistyökuvioita
+
 
 Avoimen tieteen koulukunnat
 ===================================
+
 
 <table>
 <thead>
@@ -95,7 +95,7 @@ Avoimen tieteen koulukunnat
 </tr>
 <tr class="even">
 <td align="left">Demokratian koulukunta (democratic)</td>
-<td align="left">Tiedon saavutettavuus on eriarvoista jakautunutta</td>
+<td align="left">Pääsy tietoon ei ole kaikille yhtäläinen</td>
 <td align="left">Tutkijat, poliitikot, kansalaiset</td>
 <td align="left">Tiedon avaaminen ilmaiseksi kaikille</td>
 <td align="left">Open access, tekijänoikeudet, avoin data, avoin koodi</td>
@@ -127,27 +127,150 @@ Avoimen tieteen koulukunnat
 
 *Lähde: [Fecher & Friesike. (2013) Open Science: One Term, Five Schools of Thought.](http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2272036)*
 
+Ongelmia
+=======================
+* edellyttää murrosta tieteentekemisen tavoissa ja kulttuurissa
+* aikaa vievää, kuten suunnitelu, projektinhallinta, lisensointi
+* kannustimien puute
+* OA lehdet heikosti arvostettuja
+* yksityisyys
+
+*Lähde: [github.com/openscienceASAP/openscience-presentations](https://github.com/openscienceASAP/openscience-presentations/blob/master/Content.md)*
+
+Lisää ongelmia (eri tieteenalat)
+=======================
+incremental:false
+- "tekniset hyödyt" realisoituvat laskennallisissa tieteissä
+- luonnontieteiden mahdollisuudet ovat ihmistieteiden uhkia
+    - Datat on arkaluonteisia
+    - julkaisussa kirjojen ja perinteisten lehtien asema on kova
+    - kaikessa avaamisessa nähdään varkauden riski
+- monissa ihmistieteissä ei ole laskennallista "argumentaatiota"
+    - teksti puhuu puolestaan
+    - kirjojen asema vahva
+    - huoli laadukkaasta editoinnista
+- ihmistieteissä usein tutkijat yksin vs. tutkimusryhmät luonnontieteissä -> riskien ottamista kartetaan 
+- tieteelliset seurat ja open access
 
 
-2. Demo: dynaamiset julkaisut avoimilla menetelmillä
+Esimerkki: Science lehti 4.10.2013
+=================================
+Teemanumero Science-lehdessä: [Communication in Science: Pressures and Predators](http://m.sciencemag.org/site/special/scicomm/index.xhtml) ja siinä artikkeli [Who's Afraid of Peer Review?](http://m.sciencemag.org/content/342/6154/60.full)
+- keksitty juttu meni läpi monessa OA-lehdessä
+
+**Reaktioita artikkeliin:**
+
+- [I confess, I wrote the Arsenic DNA paper to expose flaws in peer-review at subscription based journals](http://www.michaeleisen.org/blog/?p=1439)
+- [Flawed sting operation singles out open access journals ](http://theconversation.com/flawed-sting-operation-singles-out-open-access-journals-18846)
+- [OASPA’s response to the recent article in Science entitled “Who’s Afraid of Peer Review?”](http://oaspa.org/response-to-the-recent-article-in-science/)
+- [Steve Harnan: Fair-Gold](http://mailman.ecs.soton.ac.uk/pipermail/goal/2013-October/002176.html)
+- [Guardian: Open access publishing hoax: what Science magazine got wrong](http://www.theguardian.com/higher-education-network/blog/2013/oct/04/science-hoax-peer-review-open-access?CMP=twt_gu)
+
+
+
+
+
+
+2. Toistettavuus avoimen tieteen käytäntönä
 ========================================================
 title: false
-<h1 style="text-align:center;padding-top:200px;">2. Demo: dynaamiset julkaisut avoimilla menetelmillä</h1>
+<h1 style="text-align:center;padding-top:200px;">2. Toistettavuus avoimen tieteen käytäntönä</h1>
+
+Gradun työvirta vuodelta 2008
+===============================
+![](figures/prosessi.png)
+
+Toistettava tutkimus/analyysi
+================================
+(reproducible research/analysis)
+
+* tarkoitetaan tehokasta tapaa hallita data-analyysi kokonaisuutena aina raakadatasta julkaisuvalmiiksi taulukoiksi ja kuvioiksi asti
+* ensisijaisesti kyse analyysin arvioitavuudesta ja luotettavuudesta 
+* lisäksi toistettava data-analyysi on suoraviivaisempi, helpommin hallittava sekä ennen kaikkean jaettava 
+
+*Lähde: [Workshop: Oikopolkua datasta julkaisuun 2/2013](http://markuskainu.fi/workshop/toistettava/)*
+
+Toistettava tutkimus
+================================
+* Analyysikoodin+datan jakaminen tiedeyhteisölle on tärkeä ja konkreettinen osa tieteellisen osaamisen ja tiedon kumuloitumista, ja merkittävä mahdollisuus juuri laskennallisten (sosiaali)tieteiden kehittymiselle
+* Kun analyysissä käytetetään avoimen lähdekoodin ohjelmistoja on analyysi toistettavissa myös riippumatta tutkijan taloudellisista resursseista tai rajoittavista kaupallisten ohjelmien lisensseistä
+
+*Lähde: [Workshop: Oikopolkua datasta julkaisuun 2/2013](http://markuskainu.fi/workshop/toistettava/)*
+
+Toistettava analyysi R-ympäristössä
+================================
+![](figures/analyysi/input1.png)
+
+Toistettava analyysi R-ympäristössä
+================================
+![](figures/analyysi/input2.png)
+
+Toistettava analyysi R-ympäristössä
+================================
+![](figures/analyysi/input3.png)
+
+Toistettava analyysi R-ympäristössä
+================================
+![](figures/analyysi/input4.png)
+
+Toistettava analyysi R-ympäristössä
+================================
+![](figures/analyysi/analysis1.png)
+
+Toistettava analyysi R-ympäristössä
+================================
+![](figures/analyysi/analysis2.png)
+
+Toistettava analyysi R-ympäristössä
+================================
+![](figures/analyysi/analysis3.png)
+
+Toistettava analyysi R-ympäristössä
+================================
+![](figures/analyysi/output1.png)
+
+Toistettava analyysi R-ympäristössä
+================================
+![](figures/analyysi/output2.png)
+
+Toistettava analyysi R-ympäristössä
+================================
+![](figures/analyysi/output3.png)
+
+Toistettava analyysi R-ympäristössä
+================================
+![](figures/analyysi/output4.png)
+
+Toistettava analyysi R-ympäristössä
+================================
+![](figures/analyysi.gif)
+
+Toistettava analyysi R-ympäristössä
+================================
+- kaikkien julkaisujen *lähdekoodi* tekstimuodossa
+- erityyppiset julkaisut (slaidit,raportit,artikkelit) käännetään samasta koodipohjasta
+- kaikki analyysin vaiheet ohjelmoitu ja dokumentoitu
+
+
+3. Demo: dynaamiset julkaisut avoimilla menetelmillä
+========================================================
+title: false
+<h1 style="text-align:center;padding-top:200px;">3. Demo: dynaamiset julkaisut avoimilla menetelmillä</h1>
 
 
 Ladataan data Google Drivesta ja käsitellään hieman
 ========================================================
-```{rloadgoogle, eval=TRUE}
+```{rloadgoogle, eval=FALSE}
 library(RCurl)
 # myCsv <- getURL("https://docs.google.com/spreadsheet/pub?key=0AqQZEZLGjzKAdHlaelpHU2VDR3V1blNfeExma19keFE&output=csv")
 # dat <- read.csv(textConnection(myCsv), na.strings = "")
 # save(dat, file="dat.RData")
 load("dat.RData")
 names(dat) <- c("aika","tieteenala",
-               "empiriaPainot","teoriaPainot",
-                "laadulPainot","dataAvointa",
-               "yksinTyo","OaYleinen",
-                "AtMahdollisuus","kunta")
+*        "empiriaPainot","teoriaPainot",
+* * "laadulPainot","dataAvointa",
+*        "yksinTyo","OaYleinen",
+* * "AtMahdollisuus","kunta")
 #df <- dat[-1:-11,]
 df <- dat
 library(stringr)
@@ -158,14 +281,14 @@ df$pvm <- as.Date(df$pvm, format="%d.%m.%Y")
 
 Data vastaukset 1-5 ja muuttujat 7-11
 ========================================================
-```{rprintdata, eval=TRUE}
+```{rprintdata, eval=FALSE}
 df[1:5,7:11]
 ```
 
 
 Vastausten kertyminen
 ========================================================
-```{rplotdensity, fig.width=14, fig.height=6, eval=TRUE}
+```{rplotdensity, fig.width=14, fig.height=6, eval=FALSE}
 library(ggplot2)
 ggplot(df, aes(x=pvm)) + 
   geom_bar()
@@ -175,7 +298,7 @@ ggplot(df, aes(x=pvm)) +
 
 Tieteenala
 ========================================================
-```{rplotfield, fig.width=14, fig.height=6, eval=TRUE}
+```{rplotfield, fig.width=14, fig.height=6, eval=FALSE}
 library(ggplot2)
 ggplot(df, aes(x=tieteenala)) + 
   geom_bar()
@@ -185,27 +308,27 @@ ggplot(df, aes(x=tieteenala)) +
 
 Vastaukset kysymyksiin
 ========================================================
-```{rplotlikert, echo=FALSE,fig.width=14, fig.height=10, eval=TRUE}
+```{rplotlikert, echo=FALSE,fig.width=14, fig.height=10, eval=FALSE}
 source(url("http://www.strengejacke.de/R-Stuff/sjPlotLikert_0_4.R"))
 likert_dat <- df[,3:9]
 likert_dat <- as.data.frame(5 -as.matrix(likert_dat))
 
 likert_levels <- list(c("täysin eri mieltä",
-                      "osittain eri mieltä",
-                      "osittain samaa mieltä",
-                      "täysin samaa mieltä"))
+* *       "osittain eri mieltä",
+* *       "osittain samaa mieltä",
+* *       "täysin samaa mieltä"))
 
 items <- list(names(likert_dat))
 sjp.likert(likert_dat, 
-           legendLabels=likert_levels, 
-           axisLabels.x=items, 
-           theme="minimal")
+*    legendLabels=likert_levels, 
+*    axisLabels.x=items, 
+*    theme="minimal")
 ```
 
 
 Vastaajien synnyinpaikka
 ========================================================
-```{rmungespatial, echo=FALSE, eval=TRUE}
+```{rmungespatial, echo=FALSE, eval=FALSE}
 # geokoodataan syntymäpaikat
 library(ggmap)
 location <- unique(as.character(df$kunta))
@@ -220,20 +343,20 @@ load("gadm.df.RData")
 kunta <- as.data.frame(df$kunta)
 names(kunta) <- "kunta"
 kunta.dat <- merge(kunta,spat.data,by.x="kunta",
-                   by.y="location")
+* *    by.y="location")
 ```
 
-```{rplotspatial, echo=FALSE, fig.width=14, fig.height=10, eval=TRUE}
+```{rplotspatial, echo=FALSE, fig.width=14, fig.height=10, eval=FALSE}
 ggplot(gadm.df, aes(long,lat,group=group)) +
   geom_polygon(fill="Azure 1", color = "Dark Gray") + 
   geom_point(data=kunta.dat, 
-             aes(lon,lat, group=kunta), 
-             size=3, shape=1,
-             position=position_jitter(width=.1,height=.1)) +
+*      aes(lon,lat, group=kunta), 
+*      size=3, shape=1,
+*      position=position_jitter(width=.1,height=.1)) +
   coord_map(project="orthographic") + 
   geom_text(data=spat.data, aes(lon, lat, label = location, 
-                                group=location), 
-            size=3, color="black", hjust=0.5, vjust=-2.0) +
+* * * * group=location), 
+*     size=3, color="black", hjust=0.5, vjust=-2.0) +
   theme_minimal() +
   theme(legend.position = "none")
 
