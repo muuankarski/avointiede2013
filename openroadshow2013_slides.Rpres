@@ -41,12 +41,29 @@ incremental:false
 * Mitä iloa on avoimuudesta tieteessä?
 * Mitä yksittäinen tutkija voi tehdä ja missä koko tieteen teon rakenteiden tulisi muuttua? 
 
+<!-- ***********************************
+- teitä houkuteltiin yleisöksi seuraavilla kysymyksillä
+- yleisössä minua parempia asiantuntijoita näissä asioissa
+- en aio niihin vastata
+- kenties palatataan niihin lopummassa loppuosan keskustelussa,
+
+************************************ -->
 
 Sisältö
 ========================================================
 1. Avoin tiede ja avoimen tieteen koulukunnat
 2. Toistettavuus avoimen tieteen käytäntönä
 3. Demo: dynaamiset julkaisut avoimilla menetelmillä
+
+<!-- ***********************************
+- Yleinen johdanto siihen mistä avoimessa tieteessä on kyse
+- avoin tiede -keskustelun jäsentamistä eri koulukuntiin
+
+- toistettavuudesta tieteenteon arjessa
+
+************************************ -->
+
+
 
 1. Avoin tiede ja avoin tieteellinen tieto
 ========================================================
@@ -141,7 +158,8 @@ Avoimen tieteen koulukunnat
 </table>
 
 
-*Lähde: [Fecher & Friesike. (2013) Open Science: One Term, Five Schools of Thought.](http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2272036)*
+*Lähde: [Fecher & Friesike. (2013)](http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2272036), [artikkelin viitteet](https://rawgithub.com/muuankarski/avointiede2013/master/fiveschools/citations_by_schools.html)
+
 
 Ongelmia
 =======================
@@ -152,6 +170,7 @@ Ongelmia
 * yksityisyys
 
 *Lähde: [github.com/openscienceASAP/openscience-presentations](https://github.com/openscienceASAP/openscience-presentations/blob/master/Content.md)*
+
 
 Lisää ongelmia (eri tieteenalat)
 =======================
@@ -183,15 +202,20 @@ Teemanumero Science-lehdessä: [Communication in Science: Pressures and Predator
 
 
 
-
 2. Toistettavuus avoimen tieteen käytäntönä
 ========================================================
 title: false
 <h1 style="text-align:center;padding-top:200px;">2. Toistettavuus avoimen tieteen käytäntönä</h1>
 
+
 Gradun työvirta vuodelta 2008
 ===============================
 ![](figures/prosessi.png)
+
+<!-- ***********************************
+- prosessista oli jonkinlaien sanallinen kuvaus/päiväkirja, mutta tutkimus mahdoton toistaan sen pohjalta
+
+************************************ -->
 
 Toistettava tutkimus/analyysi
 ================================
@@ -223,7 +247,7 @@ Oma ohjelmistoympäristö
 ========================================================
 incremental:false
 - Kaikki ohjelmat vapaan ja avoimen lähdekoodin ohjelmia
-- tekstit, esitykset, webbisivut **tekstimuodossa**
+- tekstien, artikkelien, webbisivujen lähdekoodit **tekstimuodossa**
 
 **Käytän**
 
@@ -288,6 +312,10 @@ Toistettava analyysi R-ympäristössä
 - erityyppiset julkaisut (slaidit,raportit,artikkelit) käännetään samasta koodipohjasta
 - kaikki analyysin vaiheet ohjelmoitu ja dokumentoitu
 
+**linkkejä toistettavuudesta**
+
+- [Treading a New Path for Reproducible Research: Part 1](http://simplystatistics.org/2013/08/21/treading-a-new-path-for-reproducible-research-part-1/)
+- [Evidence-based Data Analysis: Treading a New Path for Reproducible Research (Part 2)](http://simplystatistics.org/2013/08/28/evidence-based-data-analysis-treading-a-new-path-for-reproducible-research-part-2/)
 
 3. Demo: dynaamiset julkaisut avoimilla menetelmillä
 ========================================================
@@ -297,24 +325,22 @@ title: false
 
 Ladataan data Google Drivesta
 ========================================================
-```{rloadgoogle, eval=FALSE}
+```{rloadgoogle, eval=TRUE}
 library(RCurl)
-# myCsv <- getURL("https://docs.google.com/spreadsheet/pub?key=0AqQZEZLGjzKAdHlaelpHU2VDR3V1blNfeExma19keFE&output=csv")
-# dat <- read.csv(textConnection(myCsv), na.strings = "")
-# save(dat, file="dat.RData")
-load("dat.RData")
+myCsv <- getURL("https://docs.google.com/spreadsheet/pub?key=0AqQZEZLGjzKAdHlaelpHU2VDR3V1blNfeExma19keFE&output=csv")
+dat <- read.csv(textConnection(myCsv), na.strings = "")
 ```
 
 Käsitellään hieman
 ========================================================
-```{rmanipulate, eval=FALSE}
+```{rmanipulate, eval=TRUE}
 # uudet muuttujanimet
 names(dat) <- c("aika","tieteenala",
         "empiriaPainot","teoriaPainot",
         "laadulPainot","dataAvointa",
         "yksinTyo","OaYleinen",
         "AtMahdollisuus","kunta")
-#df <- dat[-1:-11,]
+#df <- dat[-1:-8,]
 df <- dat
 # aikaleimasta päivämäärä
 library(stringr)
@@ -326,54 +352,71 @@ df$pvm <- as.Date(df$pvm, format="%d.%m.%Y")
 
 Data vastaukset 1-5 ja muuttujat 7-11
 ========================================================
-```{rprintdata, eval=FALSE}
+```{rprintdata, eval=TRUE}
 df[1:5,7:11]
 ```
 
 
 Vastausten kertyminen
 ========================================================
-```{rplotdensity, fig.width=14, fig.height=6, eval=FALSE}
+```{rplotdensity, fig.width=14, fig.height=6, eval=TRUE}
 library(ggplot2)
 ggplot(df, aes(x=pvm)) + 
-  geom_bar()
+  geom_bar() +
+  theme_minimal(base_size = 20)
 
 ```
 
 
 Tieteenala
 ========================================================
-```{rplotfield, fig.width=14, fig.height=6, eval=FALSE}
+```{rplotfield, fig.width=14, fig.height=6, eval=TRUE}
 library(ggplot2)
 ggplot(df, aes(x=tieteenala)) + 
-  geom_bar()
+  geom_bar() +
+  coord_flip() +
+  theme_minimal(base_size = 20)
 
 ```
 
 
 Vastaukset kysymyksiin
 ========================================================
-```{rplotlikert, echo=FALSE,fig.width=14, fig.height=10, eval=FALSE}
-source(url("http://www.strengejacke.de/R-Stuff/sjPlotLikert_0_4.R"))
+```{rplotlikert, echo=FALSE,fig.width=14, fig.height=10, eval=TRUE}
 likert_dat <- df[,3:9]
-likert_dat <- as.data.frame(5 -as.matrix(likert_dat))
-
-likert_levels <- list(c("täysin eri mieltä",
-* *       "osittain eri mieltä",
-* *       "osittain samaa mieltä",
-* *       "täysin samaa mieltä"))
-
-items <- list(names(likert_dat))
-sjp.likert(likert_dat, 
-*    legendLabels=likert_levels, 
-*    axisLabels.x=items, 
-*    theme="minimal")
+library(reshape2)
+df.long <- melt(likert_dat)
+tbl <- data.frame(prop.table(table(df.long$variable,
+                                   df.long$value),1)*100)
+tbl$Freq <- round(tbl$Freq,1)
+tbl$Var2 <- as.numeric(levels(tbl$Var2))[tbl$Var2]
+tbl$Var2[tbl$Var2 == 1] <- "täysin samaa mieltä"
+tbl$Var2[tbl$Var2 == 2] <- "osittain samaa mieltä"
+tbl$Var2[tbl$Var2 == 3] <- "osittain eri mieltä"
+tbl$Var2[tbl$Var2 == 4] <- "täysin eri mieltä"
+tbl$Var2 <- factor(tbl$Var2, 
+                   levels=c("täysin eri mieltä",
+                            "osittain eri mieltä",
+                            "osittain samaa mieltä",
+                            "täysin samaa mieltä"))
+library(ggplot2)
+ggplot(tbl, aes(x=Var2, y=Freq, fill=Var2, label=Freq)) +
+  geom_bar(stat="identity",position="dodge") +
+  geom_text(position = position_dodge(), 
+            vjust = -0.5) +
+  facet_wrap(~Var1) +
+  scale_fill_brewer(type="div", palette="RdYlGn") +
+  theme_minimal(base_size = 20) +
+  theme(legend.position="top") +
+  theme(axis.text.x = element_blank()) +
+  coord_cartesian(ylim=c(0,70))
 ```
+
 
 
 Vastaajien synnyinpaikka
 ========================================================
-```{rmungespatial, echo=FALSE, eval=FALSE}
+```{rmungespatial, echo=FALSE, eval=TRUE}
 # geokoodataan syntymäpaikat
 library(ggmap)
 location <- unique(as.character(df$kunta))
@@ -381,31 +424,28 @@ code <- geocode(location, output = c("latlon", "latlona", "more", "all"), messag
     sensor = FALSE, override_limit = FALSE)
 spat.data <- cbind(location, code)
 # Ladataan Suomen valtion rahat GADM-tietokannasta
-#load(url("http://gadm.org/data/rda/FIN_adm0.RData"))
 #source("shapefile_operations.R")
-load("gadm.df.RData")
+load("data/gadm.df.RData")
 # kotipaikkadata
 kunta <- as.data.frame(df$kunta)
 names(kunta) <- "kunta"
 kunta.dat <- merge(kunta,spat.data,by.x="kunta",
-* *    by.y="location")
+                   by.y="location")
 ```
 
-```{rplotspatial, echo=FALSE, fig.width=14, fig.height=10, eval=FALSE}
+```{rplotspatial, echo=FALSE, fig.width=14, fig.height=10, eval=TRUE}
 ggplot(gadm.df, aes(long,lat,group=group)) +
-  geom_polygon(fill="Azure 1", color = "Dark Gray") + 
+  geom_polygon(fill= "white", color = "Dark Gray") + 
   geom_point(data=kunta.dat, 
-*      aes(lon,lat, group=kunta), 
-*      size=3, shape=1,
-*      position=position_jitter(width=.1,height=.1)) +
+      aes(lon,lat, group=kunta), shape=1, size=5,
+      position=position_jitter(width=.1,height=.1)) +
   coord_map(project="orthographic") + 
-  geom_text(data=spat.data, aes(lon, lat, label = location, 
-* * * * group=location), 
-*     size=3, color="black", hjust=0.5, vjust=-2.0) +
+  geom_text(data=spat.data, aes(lon, lat, 
+                                label = location,
+                                group=location), 
+  size=5, color="black", hjust=0.5, vjust=-2.0) +
   theme_minimal() +
   theme(legend.position = "none")
-
-
 ```
 
 Tekstiasiakirjat perustuen samaan koodipohjaan
@@ -413,7 +453,7 @@ Tekstiasiakirjat perustuen samaan koodipohjaan
 
 ```{r, eval=FALSE}
 library(knitr)
-knit("dokkari.Rmd")
+knit("dokkari.Rmd") # into .md
 system("pandoc dokkari.md -o dokkari.pdf")
 system("pandoc dokkari.md -o dokkari.odt")
 system("pandoc -s dokkari.md -o dokkari.html")
