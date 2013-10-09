@@ -16,8 +16,25 @@ css: ../../../template/rpresentation/slides.css
 
 <a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a>
 
+<!-- ***********************************
+- kuka, turku linkki eka syy miksi täällä
+- toinen syy: jäsenenä avoimen tieteen työryhmä
+- olen yhteiskuntatieteilijä ja mä oon ajautunut näiden asioiden pariin avoimien ohjelmistojen kautta
+- Teemaryhmä 3: Avoimen tieteen käytännöt 
+- laskennallista yhteiskuntatutkimusta, ekonometristä, asennetutkimusta yms, spatiaalista analyysiä.
+- gradua tehdessä huomasin että merkittävä osa ajasta kuluu erilaiseen datan muokkaamiseen ja tilastolliseen analyysiin, mutta sen toteuttaminen edellyttää että itse/joku muu ostaa lisenssin + lisenssiehdot rajoitti melko paljon sitä, millaisiin töihin mä voin osaamistani soveltaa.
+- aloitin siirtymän vapaisiin ja avoimen lähdekoodin ohjelmistoihin
+- käytännöt: 
+************************************ -->
+
+github.com/muuankarski/avointiede2013
+========================================================
+title: false
+<h1 style="text-align:center;padding-top:200px;">github.com/</br>muuankarski/</br>avointiede2013</h1>
+
+
 ====================================
-incremental:true
+incremental:false
 * Miten julkaisen avoimesti? 
 * Miten avaan tutkimusdatani? 
 * Miksi siirtyisin käyttämään avoimia ohjelmistoja tutkimusaineistojen analysointiin? 
@@ -29,13 +46,12 @@ Sisältö
 ========================================================
 1. Avoin tiede ja avoimen tieteen koulukunnat
 2. Toistettavuus avoimen tieteen käytäntönä
-2. Demo: dynaamiset julkaisut avoimilla menetelmillä
-3. Erään paperin anatomia
+3. Demo: dynaamiset julkaisut avoimilla menetelmillä
 
 1. Avoin tiede ja avoin tieteellinen tieto
 ========================================================
 title: false
-<h1 style="text-align:center;padding-top:200px;">1. Avoin tiede ja avoin tieteellinen tieto</h1>
+<h1 style="text-align:center;padding-top:200px;">1. Avoin tiede ja </br> avoin tieteellinen tieto</h1>
 
 
 Avoin tiede
@@ -145,8 +161,7 @@ incremental:false
     - Datat on arkaluonteisia
     - julkaisussa kirjojen ja perinteisten lehtien asema on kova
     - kaikessa avaamisessa nähdään varkauden riski
-- monissa ihmistieteissä ei ole laskennallista "argumentaatiota"
-    - teksti puhuu puolestaan
+- monissa ihmistieteissä ei ole laskennallista "argumentaatiota", vaan *teksti puhuu puolestaan*
     - kirjojen asema vahva
     - huoli laadukkaasta editoinnista
 - ihmistieteissä usein tutkijat yksin vs. tutkimusryhmät luonnontieteissä -> riskien ottamista kartetaan 
@@ -165,8 +180,6 @@ Teemanumero Science-lehdessä: [Communication in Science: Pressures and Predator
 - [OASPA’s response to the recent article in Science entitled “Who’s Afraid of Peer Review?”](http://oaspa.org/response-to-the-recent-article-in-science/)
 - [Steve Harnan: Fair-Gold](http://mailman.ecs.soton.ac.uk/pipermail/goal/2013-October/002176.html)
 - [Guardian: Open access publishing hoax: what Science magazine got wrong](http://www.theguardian.com/higher-education-network/blog/2013/oct/04/science-hoax-peer-review-open-access?CMP=twt_gu)
-
-
 
 
 
@@ -196,6 +209,30 @@ Toistettava tutkimus
 * Kun analyysissä käytetetään avoimen lähdekoodin ohjelmistoja on analyysi toistettavissa myös riippumatta tutkijan taloudellisista resursseista tai rajoittavista kaupallisten ohjelmien lisensseistä
 
 *Lähde: [Workshop: Oikopolkua datasta julkaisuun 2/2013](http://markuskainu.fi/workshop/toistettava/)*
+
+========================================================
+incremental:false
+*Kuinka monta it-sovellusta olet ottanut käyttöön viimeisen viiden vuoden aikana*
+
+1. jotka palvelevat byrokratiaa?
+2. jotka palvelevat tutkimuksen tekemistä?
+
+Kuka valitsee ne analyyttiset menetelmät, joita käytämme/saamme käyttää?
+
+Oma ohjelmistoympäristö
+========================================================
+incremental:false
+- Kaikki ohjelmat vapaan ja avoimen lähdekoodin ohjelmia
+- tekstit, esitykset, webbisivut **tekstimuodossa**
+
+**Käytän**
+
+- [linux](http://www.linuxfoundation.org/) käyttöjärjestelmä
+- [markdown](http://daringfireball.net/projects/markdown/) merkintäkieltä kirjoittamiseen (millä tahansa tekstieditorilla)
+- [R-kieltä](http://www.r-project.org/) data-analyysiin, tilastolliseen analyysiin ja tilastografiikkaan
+- [pandoc](http://johnmacfarlane.net/pandoc/)-dokumentinkääntäjää *lähdekooditekstin* kääntämiseen eri formaatteihin (.docx,.pdf,.ppt,.html,.epub,..)
+- [.git](http://git-scm.com/)-versionhallintaa versionhallintaan
+
 
 Toistettava analyysi R-ympäristössä
 ================================
@@ -258,7 +295,7 @@ title: false
 <h1 style="text-align:center;padding-top:200px;">3. Demo: dynaamiset julkaisut avoimilla menetelmillä</h1>
 
 
-Ladataan data Google Drivesta ja käsitellään hieman
+Ladataan data Google Drivesta
 ========================================================
 ```{rloadgoogle, eval=FALSE}
 library(RCurl)
@@ -266,18 +303,26 @@ library(RCurl)
 # dat <- read.csv(textConnection(myCsv), na.strings = "")
 # save(dat, file="dat.RData")
 load("dat.RData")
+```
+
+Käsitellään hieman
+========================================================
+```{rmanipulate, eval=FALSE}
+# uudet muuttujanimet
 names(dat) <- c("aika","tieteenala",
-*        "empiriaPainot","teoriaPainot",
-* * "laadulPainot","dataAvointa",
-*        "yksinTyo","OaYleinen",
-* * "AtMahdollisuus","kunta")
+        "empiriaPainot","teoriaPainot",
+        "laadulPainot","dataAvointa",
+        "yksinTyo","OaYleinen",
+        "AtMahdollisuus","kunta")
 #df <- dat[-1:-11,]
 df <- dat
+# aikaleimasta päivämäärä
 library(stringr)
 df$aika <- as.character(df$aika)
 df$pvm <- str_trim(str_sub(df$aika, 1, 10))
 df$pvm <- as.Date(df$pvm, format="%d.%m.%Y")
 ```
+
 
 Data vastaukset 1-5 ja muuttujat 7-11
 ========================================================
@@ -397,208 +442,16 @@ incremental:false
 - Avoimet analyysiohjelmistot vahvoja toistettavien/dynaamisten tutkimusraporttien (paperit,esitysgrafiikka,tms.) teossa
 - dynaamisuuden edut: kun data tai analyysikoodi muuttuu, niin julkaisu on aina ajan tasalla
 
+**Linkkejä**
+- [Xie (2014): Dynamic Documents with R and knitr](http://www.crcpress.com/product/isbn/9781482203530)
+    - [kirjan lähdekoodi githubissa](https://github.com/yihui/knitr-book)
+- [Oikopolkua datasta julkaisuun - Toistettava data-analyysiprosessi määrällisessä sosiaalitutkimuksessa R:n, Markdownin ja knitr:n avulla](http://markuskainu.fi/workshop/toistettava/)
 
-3. Erään paperin anatomia
+Kysymyksiä
 ========================================================
 title: false
-<h1 style="text-align:center;padding-top:200px;">3. Erään paperin anatomia</h1>
+<h1 style="text-align:center;padding-top:100px;">Kysymyksiä & </br> kommentteja</h1>
 
-
-
-
-
-
-
-
-Hyllytetyt diat
-========================================================
-title: false
-<h1 style="text-align:center;padding-top:200px;">Hyllytetyt diat</h1>
-
-In past five years
-========================================================
-incremental:false
-1. How many new it-system have you adopted for bureaucratic purposes?
-2. How many new it-system have you adopted for analytical purposes?
-
-Who makes the choice of the methods we (are allowed to) use?
-
-My software environment
-========================================================
-incremental:false
-- All free and open source software
-- Writings, presentations, code - all as **plain text**
-
-### I use
-
-- [linux](http://www.linuxfoundation.org/) operating system
-- [markdown](http://daringfireball.net/projects/markdown/) for typesetting using any text editor (notepad)
-- [pandoc](http://johnmacfarlane.net/pandoc/) for converting the plain text into any format (.docx,.pdf,.ppt,.html,.epub,..)
-- [R](http://www.r-project.org/) for data analysis, statistical analysis & graphics
-- [.git](http://git-scm.com/) for version control
-
-Why FOSS?
-========================================================
-incremental:false
-1. able to build the environment on any computer
-2. able to teach my analytical work (quantitative) to anyone with no software costs or licence constrains
-3. long-term compatibility of file formats and standards
-
-### freedom & affordability & performance
-
-Case: The R project
-========================================================
-title: false
-<h1 style="text-align:center;padding-top:200px;">Case: The R project</h1>
-
-<!--
-Prime example of what internets makes possible
-
--->
-
-The R project for statistical computing
-========================================================
-- [r-project.org/](http://www.r-project.org/)
-- free and open source
-- maintained and supported by thousands of individuals who use it and who contribute to its ongoing development 
-- ~ 6500+ user created packages available
-
-```{r, echo=FALSE, results='asis'}
-Software <- c("R","SAS","Stata","Others")
-n.of.blogs <- c(452,40,8,"0-3")
-tbl <- data.frame(Software,n.of.blogs)
-library(xtable)
-print.xtable(xtable(tbl), type="html")
-```
-
-Number of blogs devoted to each software package on May 12, 2013. **Source:** [r4stats.com -blog](http://r4stats.com/)
-
-Number of posts per software on each statistics forum on 2/10/2013.
-========================================================
-![](figures/stack.png)
-Source: [r4stats.com -blog](http://r4stats.com/)
-
-
-***
-
-- [stackoverflow.com](http://stackoverflow.com/)
-- [Cross Validated](http://stats.stackexchange.com/)
-- [talkstats.com](http://www.talkstats.com/)
-
-An analysis of the r-help mailing list
-========================================================
-![](figures/r-help1.png)
-
-Video
-========================================================
-title: false
-<h1 style="text-align:center;padding-top:200px;">Video: </br><a href="http://www.youtube.com/embed/TR2bHSJ_eck">R: The most powerful and most widely used statistical software</a></h1>
-
-
-====================================
-<table>
-<tr>
-<th>School of thought</th>
-<th>Central assumption</th>
-<th>Involved groups</th>
-<th>Central Aim</th>
-<th>Tools & Methods</th>
-</tr>
-<tr>
-<td><b>Democratic</td></b>
-<td>The access to knowledge is unequally distributed.</td>
-<td>Scientists, polititians, citizens</td>
-<td>Making knowledge freely available for everyone.</td>
-<td>Open access, intellectual property rights, Open data, Open code</td>
-</tr>
-<tr>
-<td><b>Pragmatic</b></td>
-<td> Knowledge creation could be more efficient if scientists collaborated.</td>
-<td>Scientists </td>
-<td>Opening up the process of knowledge creation.</td>
-<td>Wisdom of the crowds, network effects, Open Data, Open Code</td>
-</tr>
-<tr>
-<td><b>Infrastructure</b></td>
-<td>Efficient research depends on the available tools and applications.</td>
-<td>Scientists & platform providers</td>
-<td>Creating openly available platforms, tools and services for scientists.</td>
-<td>Collaboration platforms and tools</td>
-</tr>
-<tr>
-<td><b>Public</b></td>
-<td>Science needs to be made accessible to the public.</td>
-<td>Scientists & citizens</td>
-<td>Making science accessible for citizens.</td>
-<td>Citizen Science, Science PR, Science Blogging</td>
-</tr>
-<tr>
-<td><b>Measurement</b></td>
-<td>Scientific contributions today need alternative impact measurements.</td>
-<td>Scientists & politicians</td>
-<td>Developing an alternative metric system for scientific impact.</td>
-<td>Altmetrics, peer review, citation, impact factors</td>
-</tr>
-</table>
-
-
-
-1. Yhteiskunnallinen koulukunta
-========================================================
-incremental:false
-
-Sekä tieteenteon prosessi että tieteenteon tulokset tulisivat olla laajemman yleisön saatavilla
-
-- Kansalaistiede
-- Tieteen kansantajuistaminen
-
-
-2. Demokratian koulukunta
-========================================================
-incremental:false
-
-Kaikilla tulisi olla yhdenmukainen pääsy **tietoon**, etenkin jos se on tuotettu julkisin varoin
-
-- Avoin (tieteellinen) data
-    - synergiaedut datan ja analyysikoodin jakamisesta
-    - datan keräämisen päällekkäisyys
-- Open Access -julkaiseminen
-    - OA julkaisumallit: [vihreä](http://en.wikipedia.org/wiki/Self-archiving), [kultainen](http://en.wikipedia.org/wiki/Open-access_journal), [hybridi](http://en.wikipedia.org/wiki/Hybrid_open_access_journal)
-    - rahoitus 
-    - vertaisarviointi
-    
-3. pragmaattinen koulukunta
-========================================================
-incremental:false
-
-Avoimen tieteen menetelmin tutkimuksen tekemisestä ja tiedon jakamisestä on mahdollista tehdä tehokkaampaa
-
-- erilaiset online kollaboroinnin välineet
-sosiaalinen tiede, laajempi kollaborointi
-- github
-- 
-
-4. Tieteenteon infrastruktuurin koulukunta
-========================================================
-incremental:false
->Avoin tiede nähdään teknologisena haasteena. Ollaan kiinnostuneita teknisestä infrastruktuurista joka mahdollistaa uusien tieteellisten käytäntöjen hyödyntämisen internetissä
-
-### Hajautettu laskenta
-
-
-### Sosiaaliset kollaboraation verkostot
-
-
-5. Tieteellisen vaikuttavuuden mittaamisen koulukunta
-========================================================
-incremental:false
->Kiinnostunut tutkimuksen tieteellisen vaikuttavuuden vaihtoehtoisista mittaustavoista 
-
-Impact factor -mittaustavan kritiikki:
-- vertaisarviointi on aikaavievää
-- vaikuttavuus on yhteydessä enemmän lehteen kuin mitä artikkeliin
-- uudet julkaisumuodot (online OA journaalit, blogit) eivät ole mukana impact factor -mittaustavassa
-
-X. Avoimen tieteen teoreettinen koulukunta
-========================================================
-incremental:false
+<center>
+![](figures/question.gif)
+</center>

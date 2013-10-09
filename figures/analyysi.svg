@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448"
+   height="524.40942"
+   id="svg1901"
+   sodipodi:version="0.32"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="analyysi.svg"
+   version="1.1"
+   inkscape:export-filename="/home/aurelius/workspace/dokuwiki/toistettava/analyysi.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300">
+  <defs
+     id="defs1903" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="218.64039"
+     inkscape:cy="295.3154"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     inkscape:window-width="1280"
+     inkscape:window-height="1000"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     showgrid="false"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata1906">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Taso 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-527.95273)">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.40664583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:1.21993742, 1.21993742;stroke-dashoffset:0"
+       d="m 331.01564,624.89927 0,169.00839"
+       id="path4099-5"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/aurelius/workspace/dokuwiki/toistettava/toistettava_analyysi_web.png"
+       inkscape:export-xdpi="114.72272"
+       inkscape:export-ydpi="114.72272" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.40664583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:1.21993742, 1.21993742;stroke-dashoffset:0"
+       d="m 181.73376,624.89927 0,169.00838"
+       id="path4099-5-0"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/aurelius/workspace/dokuwiki/toistettava/toistettava_analyysi_web.png"
+       inkscape:export-xdpi="114.72272"
+       inkscape:export-ydpi="114.72272" />
+    <text
+       xml:space="preserve"
+       style="font-size:17.15777588px;font-style:normal;font-variant:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Gothic L;-inkscape-font-specification:URW Gothic L Book"
+       x="120.63665"
+       y="680.18451"
+       id="text2982"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/aurelius/workspace/dokuwiki/toistettava/toistettava_analyysi_web.png"
+       inkscape:export-xdpi="114.72272"
+       inkscape:export-ydpi="114.72272"><tspan
+         sodipodi:role="line"
+         id="tspan2984"
+         x="120.63665"
+         y="680.18451"
+         style="font-size:17.15777588px;font-style:normal;font-variant:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:URW Gothic L;-inkscape-font-specification:URW Gothic L Book">Markdown</tspan><tspan
+         sodipodi:role="line"
+         x="123.01595"
+         y="701.63171"
+         id="tspan3932"
+         style="font-size:17.15777588px;font-style:normal;font-variant:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:URW Gothic L;-inkscape-font-specification:URW Gothic L Book">+ </tspan><tspan
+         sodipodi:role="line"
+         x="120.63665"
+         y="723.07898"
+         id="tspan2986"
+         style="font-size:17.15777588px;font-style:normal;font-variant:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:URW Gothic L;-inkscape-font-specification:URW Gothic L Book">R-code</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:17.15777588px;font-style:normal;font-variant:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Gothic L;-inkscape-font-specification:URW Gothic L Book"
+       x="256.0159"
+       y="680.29602"
+       id="text2982-7"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/aurelius/workspace/dokuwiki/toistettava/toistettava_analyysi_web.png"
+       inkscape:export-xdpi="114.72272"
+       inkscape:export-ydpi="114.72272"><tspan
+         sodipodi:role="line"
+         x="258.3952"
+         y="680.29602"
+         id="tspan2986-2"
+         style="font-size:17.15777588px;font-style:normal;font-variant:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:URW Gothic L;-inkscape-font-specification:URW Gothic L Book">R </tspan><tspan
+         sodipodi:role="line"
+         x="256.0159"
+         y="701.74323"
+         id="tspan3930"
+         style="font-size:17.15777588px;font-style:normal;font-variant:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:URW Gothic L;-inkscape-font-specification:URW Gothic L Book">+</tspan><tspan
+         sodipodi:role="line"
+         x="256.0159"
+         y="723.19043"
+         id="tspan3928"
+         style="font-size:17.15777588px;font-style:normal;font-variant:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:URW Gothic L;-inkscape-font-specification:URW Gothic L Book">knitr</tspan></text>
+    <g
+       id="g3908"
+       transform="matrix(0.42894439,0,0,0.42894439,179.69862,369.87209)"
+       inkscape:export-filename="/home/aurelius/workspace/dokuwiki/toistettava/toistettava_analyysi_web.png"
+       inkscape:export-xdpi="114.72272"
+       inkscape:export-ydpi="114.72272">
+      <text
+         sodipodi:linespacing="125%"
+         id="text2982-7-8-3"
+         y="735.70551"
+         x="432.7821"
+         style="font-size:25.56659126px;font-style:normal;font-variant:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Gothic L;-inkscape-font-specification:URW Gothic L Book"
+         xml:space="preserve"><tspan
+           id="tspan2986-2-8-6"
+           y="735.70551"
+           x="432.7821"
+           sodipodi:role="line">beamer  -&gt;  pdf</tspan><tspan
+           id="tspan3039-3"
+           y="767.66376"
+           x="432.7821"
+           sodipodi:role="line">html5   -&gt;  web</tspan></text>
+      <g
+         transform="translate(0,73.361687)"
+         id="g3898">
+        <text
+           xml:space="preserve"
+           style="font-size:34.34843063px;font-style:normal;font-variant:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Gothic L;-inkscape-font-specification:URW Gothic L Book"
+           x="427.25568"
+           y="625.83722"
+           id="text2982-7-4"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             x="427.25568"
+             y="625.83722"
+             id="tspan2986-2-7">Esitysgrafiikka</tspan></text>
+        <path
+           style="fill:none;stroke:#000000;stroke-width:1.05200005;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           d="m 424.91881,635.15763 224.73381,0 0,-0.4481"
+           id="path3096"
+           inkscape:connector-curvature="0" />
+      </g>
+    </g>
+    <g
+       id="g3917"
+       transform="matrix(0.42894439,0,0,0.42894439,178.84074,347.28798)"
+       inkscape:export-filename="/home/aurelius/workspace/dokuwiki/toistettava/toistettava_analyysi_web.png"
+       inkscape:export-xdpi="114.72272"
+       inkscape:export-ydpi="114.72272">
+      <text
+         sodipodi:linespacing="125%"
+         id="text2982-7-8"
+         y="920.38043"
+         x="433.319"
+         style="font-size:25.56659126px;font-style:normal;font-variant:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Gothic L;-inkscape-font-specification:URW Gothic L Book"
+         xml:space="preserve"><tspan
+           id="tspan2986-2-8"
+           y="920.38043"
+           x="433.319"
+           sodipodi:role="line">latex  -&gt;  pdf</tspan><tspan
+           id="tspan3035"
+           y="952.33868"
+           x="433.319"
+           sodipodi:role="line">html   -&gt;  web</tspan><tspan
+           id="tspan3037"
+           y="984.29694"
+           x="433.319"
+           sodipodi:role="line">odt    -&gt;  LibreOffice</tspan><tspan
+           id="tspan3039"
+           y="1016.2551"
+           x="433.319"
+           sodipodi:role="line">docx -&gt;  MS Word</tspan></text>
+      <g
+         transform="translate(3.46424,73.361687)"
+         id="g3903">
+        <text
+           xml:space="preserve"
+           style="font-size:34.34843063px;font-style:normal;font-variant:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Gothic L;-inkscape-font-specification:URW Gothic L Book"
+           x="423.54138"
+           y="808.11285"
+           id="text2982-7-4-4"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             x="423.54138"
+             y="808.11285"
+             id="tspan2986-2-7-7">Tekstiasiakirja</tspan></text>
+        <path
+           style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 421.42857,818.63778 231.42857,0 0,-1.42857"
+           id="path3096-7"
+           inkscape:connector-curvature="0" />
+      </g>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:22.88531685px;font-style:normal;font-variant:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Gothic L;-inkscape-font-specification:URW Gothic L Book"
+       x="120.03088"
+       y="638.44727"
+       id="text2982-8"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/aurelius/workspace/dokuwiki/toistettava/toistettava_analyysi_web.png"
+       inkscape:export-xdpi="114.72272"
+       inkscape:export-ydpi="114.72272"><tspan
+         sodipodi:role="line"
+         x="120.03088"
+         y="638.44727"
+         id="tspan2986-5"
+         style="font-size:22.88531685px;font-style:normal;font-variant:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:URW Gothic L;-inkscape-font-specification:URW Gothic L Book">Input</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:22.88531685px;font-style:normal;font-variant:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Gothic L;-inkscape-font-specification:URW Gothic L Book"
+       x="409.80783"
+       y="639.53662"
+       id="text2982-8-0"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/aurelius/workspace/dokuwiki/toistettava/toistettava_analyysi_web.png"
+       inkscape:export-xdpi="114.72272"
+       inkscape:export-ydpi="114.72272"><tspan
+         sodipodi:role="line"
+         x="409.80783"
+         y="639.53662"
+         id="tspan2986-5-8"
+         style="font-size:22.88531685px;font-style:normal;font-variant:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:URW Gothic L;-inkscape-font-specification:URW Gothic L Book">Output</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:22.88531685px;font-style:normal;font-variant:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Gothic L;-inkscape-font-specification:URW Gothic L Book"
+       x="257.06711"
+       y="638.22845"
+       id="text2982-8-2"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/aurelius/workspace/dokuwiki/toistettava/toistettava_analyysi_web.png"
+       inkscape:export-xdpi="114.72272"
+       inkscape:export-ydpi="114.72272"><tspan
+         sodipodi:role="line"
+         x="257.06711"
+         y="638.22845"
+         id="tspan2986-5-9"
+         style="font-size:22.88531685px;font-style:normal;font-variant:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:URW Gothic L;-inkscape-font-specification:URW Gothic L Book">Analyysi</tspan></text>
+    <g
+       id="g3079"
+       transform="matrix(0.64154843,0,0,0.64154843,27.763657,201.98159)"
+       inkscape:export-filename="/home/aurelius/workspace/dokuwiki/toistettava/toistettava_analyysi_web.png"
+       inkscape:export-xdpi="114.72272"
+       inkscape:export-ydpi="114.72272">
+      <path
+         inkscape:connector-curvature="0"
+         id="rect3954"
+         d="m 245.9664,771.54576 0,11.77977 -22.73858,0 0,18.77053 22.73858,0 0,12.53856 30.55029,-21.54444 -30.55029,-21.54442 z"
+         style="color:#000000;fill:#c6c8c8;fill-opacity:1;stroke:#000000;stroke-width:0.29545403;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text2982-8-2-7"
+         y="768.3407"
+         x="248.23155"
+         style="font-size:18.57473564px;font-style:normal;font-variant:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Gothic L;-inkscape-font-specification:URW Gothic L Book"
+         xml:space="preserve"><tspan
+           style="font-size:18.57473564px;font-style:normal;font-variant:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:URW Gothic L;-inkscape-font-specification:URW Gothic L Book"
+           id="tspan2986-5-9-1"
+           y="768.3407"
+           x="248.23155"
+           sodipodi:role="line">R Markdown</tspan></text>
+    </g>
+    <g
+       id="g3072"
+       transform="matrix(0.64154843,0,0,0.64154843,27.763657,219.37104)"
+       inkscape:export-filename="/home/aurelius/workspace/dokuwiki/toistettava/toistettava_analyysi_web.png"
+       inkscape:export-xdpi="114.72272"
+       inkscape:export-ydpi="114.72272">
+      <g
+         transform="matrix(0.53946619,0,0,0.53946619,234.60612,353.73331)"
+         id="g3985">
+        <path
+           style="color:#000000;fill:#c6c8c8;fill-opacity:1;stroke:#000000;stroke-width:0.54767853;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           d="m 399.47577,698.53904 10.918,18.91053 -36.50311,21.07507 17.39732,30.13303 36.5031,-21.07507 11.62127,20.12862 29.07527,-62.90139 -69.01185,-6.27079 z"
+           id="rect3954-8"
+           inkscape:connector-curvature="0" />
+        <path
+           style="color:#000000;fill:#c6c8c8;fill-opacity:1;stroke:#000000;stroke-width:0.54767853;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           d="m 439.06072,779.58452 -10.918,18.91052 -36.5031,-21.07507 -17.39732,30.13303 36.50311,21.07507 -11.62127,20.12863 69.01184,-6.27078 -29.07526,-62.9014 z"
+           id="rect3954-4"
+           inkscape:connector-curvature="0" />
+      </g>
+      <text
+         sodipodi:linespacing="125%"
+         id="text2982-8-2-7-7"
+         y="723.3905"
+         x="459.87344"
+         style="font-size:18.57473564px;font-style:normal;font-variant:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Gothic L;-inkscape-font-specification:URW Gothic L Book"
+         xml:space="preserve"><tspan
+           style="font-size:18.57473564px;font-style:normal;font-variant:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:URW Gothic L;-inkscape-font-specification:URW Gothic L Book"
+           id="tspan2986-5-9-1-0"
+           y="723.3905"
+           x="459.87344"
+           sodipodi:role="line">Markdown</tspan></text>
+    </g>
+  </g>
+</svg>
