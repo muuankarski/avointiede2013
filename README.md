@@ -4,10 +4,10 @@ Täältä löytyy slaidien lähdekoodi, linkkejä sekä demon aineistot ja koodi
 
 ## Materiaalit
 
-- Slaideja osoitteessa: [http://rpubs.com/muuankarski/9119](http://rpubs.com/muuankarski/9119) (tekeillä..)
-- Ennakkokysely osoitteessa [klikkaamalla tätä linkkiä!](https://docs.google.com/forms/d/1jFfj0d6vDF0kQWlJ6zuilh513y9-09hAuReNrENfBQg/viewform)
+- Slaidit osoitteessa: [http://rpubs.com/muuankarski/9119](http://rpubs.com/muuankarski/9119) (tekeillä..)
+- [Täytä ennakkokysely!](https://docs.google.com/forms/d/1jFfj0d6vDF0kQWlJ6zuilh513y9-09hAuReNrENfBQg/viewform)
 - [Avoimen tieteen etherpad](http://new.okfnpad.org/p/Tutkimusdatan_julkaisun_hallinta) - täytä omat tietosi jos haluat ja lue ja editoi dokumenttia)
-- Turun osakilpailun tapahtumasivut [okroadshowturku.eventbrite.com](https://okroadshowturku.eventbrite.com/) 
+- Turun osakilpailun tapahtumasivut: [okroadshowturku.eventbrite.com](https://okroadshowturku.eventbrite.com/) 
 
 
 ## Avoimen tieteen koulukunnat
