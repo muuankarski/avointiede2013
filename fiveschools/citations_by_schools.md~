@@ -1,6 +1,6 @@
 <!--
 cd ~/workspace/courses/own_lectures_courses/openroadshow2013_tku/fiveschools
-pandoc -s citations_by_schools.md -o citations_by_schools.html
+pandoc citations_by_schools.md -o citations_by_schools.html
 
 -->
 
