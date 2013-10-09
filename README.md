@@ -4,7 +4,7 @@ Täältä löytyy slaidien lähdekoodi, linkkejä sekä demon aineistot ja koodi
 
 ## Materiaalit
 
-- Slaidit osoitteessa: [http://rpubs.com/muuankarski/9119](http://rpubs.com/muuankarski/9119) (tekeillä..)
+- [Alustuksen slaidit](https://rawgithub.com/muuankarski/avointiede2013/master/openroadshow2013_slides.html#/)
 - [Täytä ennakkokysely!](https://docs.google.com/forms/d/1jFfj0d6vDF0kQWlJ6zuilh513y9-09hAuReNrENfBQg/viewform)
 - [Avoimen tieteen etherpad](http://new.okfnpad.org/p/Tutkimusdatan_julkaisun_hallinta) - täytä omat tietosi jos haluat ja lue ja editoi dokumenttia)
 - Turun osakilpailun tapahtumasivut: [okroadshowturku.eventbrite.com](https://okroadshowturku.eventbrite.com/) 
