@@ -93,9 +93,11 @@ ggplot(tbl, aes(x=Var2, y=Freq, fill=Var2, label=Freq)) +
 # geokoodataan syntymäpaikat
 library(ggmap)
 location <- unique(as.character(df$kunta))
+location <- location[!is.na(location)] # poistetaan NA sijainti
 code <- geocode(location, output = c("latlon", "latlona", "more", "all"), messaging = FALSE, 
     sensor = FALSE, override_limit = FALSE)
 spat.data <- cbind(location, code)
+
 # Ladataan Suomen valtion rahat GADM-tietokannasta
 #source("shapefile_operations.R")
 load("data/gadm.df.RData")

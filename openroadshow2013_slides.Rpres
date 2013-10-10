@@ -348,6 +348,7 @@ df$pvm <- as.Date(df$pvm, format="%d.%m.%Y")
 ```
 
 
+
 Data vastaukset 1-5 ja muuttujat 7-11
 ========================================================
 ```{rprintdata, eval=TRUE, cache=FALSE}
@@ -428,6 +429,7 @@ Vastaajien synnyinpaikka
 # geokoodataan syntymäpaikat
 library(ggmap)
 location <- unique(as.character(df$kunta))
+location <- location[!is.na(location)] # poistetaan NA sijainti
 code <- geocode(location, output = c("latlon", "latlona", "more", "all"), messaging = FALSE, 
     sensor = FALSE, override_limit = FALSE)
 spat.data <- cbind(location, code)
