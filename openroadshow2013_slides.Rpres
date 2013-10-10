@@ -5,7 +5,6 @@ date: Turussa, 10. lokakuuta 2013
 transition: fade
 css: ../../../template/rpresentation/slides.css
 
-
 <strong><a href="http://markuskainu.fi">Markus Kainu</a></strong>
 </br>
 *sosiaalipolitiikan tohtorikoulutettava*,</br>
@@ -13,8 +12,10 @@ css: ../../../template/rpresentation/slides.css
 </br>
 [Aleksanteri instituutti, Helsingin yliopisto](http://helsinki.fi/aleksanteri)
 
-
 <a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a>
+
+
+
 
 <!-- ***********************************
 - kuka, turku linkki eka syy miksi täällä
@@ -158,7 +159,7 @@ Avoimen tieteen koulukunnat
 </table>
 
 
-*Lähde: [Fecher & Friesike. (2013)](http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2272036), [artikkelin viitteet](https://rawgithub.com/muuankarski/avointiede2013/master/fiveschools/citations_by_schools.html)
+*Lähde: [Fecher & Friesike. (2013)](http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2272036), [artikkelin viitteet](https://rawgithub.com/muuankarski/avointiede2013/master/fiveschools/citations_by_schools.html)*
 
 
 Ongelmia
@@ -234,6 +235,7 @@ Toistettava tutkimus
 
 *Lähde: [Workshop: Oikopolkua datasta julkaisuun 2/2013](http://markuskainu.fi/workshop/toistettava/)*
 
+Kysymys yliopistotutkijoille
 ========================================================
 incremental:false
 *Kuinka monta it-sovellusta olet ottanut käyttöön viimeisen viiden vuoden aikana*
@@ -304,10 +306,6 @@ Toistettava analyysi R-ympäristössä
 
 Toistettava analyysi R-ympäristössä
 ================================
-![](figures/analyysi.gif)
-
-Toistettava analyysi R-ympäristössä
-================================
 - kaikkien julkaisujen *lähdekoodi* tekstimuodossa
 - erityyppiset julkaisut (slaidit,raportit,artikkelit) käännetään samasta koodipohjasta
 - kaikki analyysin vaiheet ohjelmoitu ja dokumentoitu
@@ -317,6 +315,7 @@ Toistettava analyysi R-ympäristössä
 - [Treading a New Path for Reproducible Research: Part 1](http://simplystatistics.org/2013/08/21/treading-a-new-path-for-reproducible-research-part-1/)
 - [Evidence-based Data Analysis: Treading a New Path for Reproducible Research (Part 2)](http://simplystatistics.org/2013/08/28/evidence-based-data-analysis-treading-a-new-path-for-reproducible-research-part-2/)
 
+
 3. Demo: dynaamiset julkaisut avoimilla menetelmillä
 ========================================================
 title: false
@@ -325,7 +324,7 @@ title: false
 
 Ladataan data Google Drivesta
 ========================================================
-```{rloadgoogle, eval=TRUE}
+```{rloadgoogle, eval=TRUE, cache=TRUE}
 library(RCurl)
 myCsv <- getURL("https://docs.google.com/spreadsheet/pub?key=0AqQZEZLGjzKAdHlaelpHU2VDR3V1blNfeExma19keFE&output=csv")
 dat <- read.csv(textConnection(myCsv), na.strings = "")
@@ -333,15 +332,14 @@ dat <- read.csv(textConnection(myCsv), na.strings = "")
 
 Käsitellään hieman
 ========================================================
-```{rmanipulate, eval=TRUE}
+```{rmanipulate, eval=TRUE, cache=TRUE}
 # uudet muuttujanimet
 names(dat) <- c("aika","tieteenala",
         "empiriaPainot","teoriaPainot",
         "laadulPainot","dataAvointa",
         "yksinTyo","OaYleinen",
         "AtMahdollisuus","kunta")
-#df <- dat[-1:-8,]
-df <- dat
+df <- dat[-1:-11,] # pudotetaan testivastaukset pois
 # aikaleimasta päivämäärä
 library(stringr)
 df$aika <- as.character(df$aika)
@@ -352,37 +350,44 @@ df$pvm <- as.Date(df$pvm, format="%d.%m.%Y")
 
 Data vastaukset 1-5 ja muuttujat 7-11
 ========================================================
-```{rprintdata, eval=TRUE}
+```{rprintdata, eval=TRUE, cache=TRUE}
 df[1:5,7:11]
 ```
 
 
 Vastausten kertyminen
 ========================================================
-```{rplotdensity, fig.width=14, fig.height=6, eval=TRUE}
+```{rplotdensity, fig.width=14, fig.height=6, eval=TRUE, cache=TRUE}
 library(ggplot2)
 ggplot(df, aes(x=pvm)) + 
   geom_bar() +
   theme_minimal(base_size = 20)
-
 ```
 
 
 Tieteenala
 ========================================================
-```{rplotfield, fig.width=14, fig.height=6, eval=TRUE}
+```{rplotfield, fig.width=14, fig.height=6, eval=TRUE, cache=TRUE}
 library(ggplot2)
 ggplot(df, aes(x=tieteenala)) + 
   geom_bar() +
   coord_flip() +
   theme_minimal(base_size = 20)
-
 ```
 
+Monivalintakysymykset
+==========================================
+1. Voiko tutkimustasi luonnehtia empiiriseksi?
+2. Voiko tutkimustasi luonnehtia teoreettiseksi? 
+3. Onko tutkimuksesi analyysi laadullista (vrt. määrällistä)? 
+4. Onko käyttämäsi aineisto avointa (vrt. salassa pidettävää)? 
+5. Teetkö tutkimustasi yksin (vrt. tutkimusryhmässä)? 
+6. Onko open access -julkaiseminen yleistä tieteenalallasi? 
+7. Onko avoin tiede mielestäsi mahdollisuus (vrt. uhka)? 
 
 Vastaukset kysymyksiin
 ========================================================
-```{rplotlikert, echo=FALSE,fig.width=14, fig.height=10, eval=TRUE}
+```{rplotlikert, echo=FALSE,fig.width=14, fig.height=10, eval=TRUE, cache=TRUE}
 likert_dat <- df[,3:9]
 library(reshape2)
 df.long <- melt(likert_dat)
@@ -399,6 +404,7 @@ tbl$Var2 <- factor(tbl$Var2,
                             "osittain eri mieltä",
                             "osittain samaa mieltä",
                             "täysin samaa mieltä"))
+
 library(ggplot2)
 ggplot(tbl, aes(x=Var2, y=Freq, fill=Var2, label=Freq)) +
   geom_bar(stat="identity",position="dodge") +
@@ -409,14 +415,16 @@ ggplot(tbl, aes(x=Var2, y=Freq, fill=Var2, label=Freq)) +
   theme_minimal(base_size = 20) +
   theme(legend.position="top") +
   theme(axis.text.x = element_blank()) +
-  coord_cartesian(ylim=c(0,70))
+  coord_cartesian(ylim=c(0,80))
+
 ```
+
 
 
 
 Vastaajien synnyinpaikka
 ========================================================
-```{rmungespatial, echo=FALSE, eval=TRUE}
+```{rmungespatial, echo=FALSE, eval=TRUE, cache=TRUE}
 # geokoodataan syntymäpaikat
 library(ggmap)
 location <- unique(as.character(df$kunta))
@@ -424,7 +432,7 @@ code <- geocode(location, output = c("latlon", "latlona", "more", "all"), messag
     sensor = FALSE, override_limit = FALSE)
 spat.data <- cbind(location, code)
 # Ladataan Suomen valtion rahat GADM-tietokannasta
-#source("shapefile_operations.R")
+# source("shapefile_operations.R")
 load("data/gadm.df.RData")
 # kotipaikkadata
 kunta <- as.data.frame(df$kunta)
@@ -433,7 +441,7 @@ kunta.dat <- merge(kunta,spat.data,by.x="kunta",
                    by.y="location")
 ```
 
-```{rplotspatial, echo=FALSE, fig.width=14, fig.height=10, eval=TRUE}
+```{rplotspatial, echo=FALSE, fig.width=14, fig.height=10, eval=TRUE, cache=TRUE}
 ggplot(gadm.df, aes(long,lat,group=group)) +
   geom_polygon(fill= "white", color = "Dark Gray") + 
   geom_point(data=kunta.dat, 
@@ -451,7 +459,7 @@ ggplot(gadm.df, aes(long,lat,group=group)) +
 Tekstiasiakirjat perustuen samaan koodipohjaan
 ========================================================
 
-```{r, eval=FALSE}
+```{r, eval=FALSE, cache=TRUE}
 library(knitr)
 knit("dokkari.Rmd") # into .md
 system("pandoc dokkari.md -o dokkari.pdf")
@@ -473,7 +481,7 @@ Demossa käytettiin osin avointa dataa ja avoimia menetelmiä
 ### avoimet menetelmät
 - [R-laskentaympäristö](http://r-project.org)
 - [Rstudio IDE](http://www.rstudio.com/ide/) -käyttöliittymä
-- liuta r-paketteja
+- [knitr](http://yihui.name/knitr/) + liuta muita r-paketteja
 - [pandoc](http://johnmacfarlane.net/pandoc/) - dokumentin kääntäjä
 
 Yhteenveto demosta
