@@ -324,7 +324,7 @@ title: false
 
 Ladataan data Google Drivesta
 ========================================================
-```{rloadgoogle, eval=TRUE, cache=TRUE}
+```{rloadgoogle, eval=TRUE, cache=FALSE}
 library(RCurl)
 myCsv <- getURL("https://docs.google.com/spreadsheet/pub?key=0AqQZEZLGjzKAdHlaelpHU2VDR3V1blNfeExma19keFE&output=csv")
 dat <- read.csv(textConnection(myCsv), na.strings = "")
@@ -332,7 +332,7 @@ dat <- read.csv(textConnection(myCsv), na.strings = "")
 
 Käsitellään hieman
 ========================================================
-```{rmanipulate, eval=TRUE, cache=TRUE}
+```{rmanipulate, eval=TRUE, cache=FALSE}
 # uudet muuttujanimet
 names(dat) <- c("aika","tieteenala",
         "empiriaPainot","teoriaPainot",
@@ -350,29 +350,29 @@ df$pvm <- as.Date(df$pvm, format="%d.%m.%Y")
 
 Data vastaukset 1-5 ja muuttujat 7-11
 ========================================================
-```{rprintdata, eval=TRUE, cache=TRUE}
+```{rprintdata, eval=TRUE, cache=FALSE}
 df[1:5,7:11]
 ```
 
 
 Vastausten kertyminen
 ========================================================
-```{rplotdensity, fig.width=14, fig.height=6, eval=TRUE, cache=TRUE}
+```{rplotdensity, fig.width=14, fig.height=6, eval=TRUE, cache=FALSE}
 library(ggplot2)
 ggplot(df, aes(x=pvm)) + 
   geom_bar() +
-  theme_minimal(base_size = 20)
+  theme_grey(base_size = 20)
 ```
 
 
 Tieteenala
 ========================================================
-```{rplotfield, fig.width=14, fig.height=6, eval=TRUE, cache=TRUE}
+```{rplotfield, fig.width=14, fig.height=6, eval=TRUE, cache=FALSE}
 library(ggplot2)
 ggplot(df, aes(x=tieteenala)) + 
   geom_bar() +
   coord_flip() +
-  theme_minimal(base_size = 20)
+  theme_grey(base_size = 20)
 ```
 
 Monivalintakysymykset
@@ -387,7 +387,7 @@ Monivalintakysymykset
 
 Vastaukset kysymyksiin
 ========================================================
-```{rplotlikert, echo=FALSE,fig.width=14, fig.height=10, eval=TRUE, cache=TRUE}
+```{rplotlikert, echo=FALSE,fig.width=14, fig.height=10, eval=TRUE, cache=FALSE}
 likert_dat <- df[,3:9]
 library(reshape2)
 df.long <- melt(likert_dat)
@@ -412,7 +412,7 @@ ggplot(tbl, aes(x=Var2, y=Freq, fill=Var2, label=Freq)) +
             vjust = -0.5) +
   facet_wrap(~Var1) +
   scale_fill_brewer(type="div", palette="RdYlGn") +
-  theme_minimal(base_size = 20) +
+  theme_grey(base_size = 20) +
   theme(legend.position="top") +
   theme(axis.text.x = element_blank()) +
   coord_cartesian(ylim=c(0,80))
@@ -424,7 +424,7 @@ ggplot(tbl, aes(x=Var2, y=Freq, fill=Var2, label=Freq)) +
 
 Vastaajien synnyinpaikka
 ========================================================
-```{rmungespatial, echo=FALSE, eval=TRUE, cache=TRUE}
+```{rmungespatial, echo=FALSE, eval=TRUE, cache=FALSE}
 # geokoodataan syntymäpaikat
 library(ggmap)
 location <- unique(as.character(df$kunta))
@@ -441,7 +441,7 @@ kunta.dat <- merge(kunta,spat.data,by.x="kunta",
                    by.y="location")
 ```
 
-```{rplotspatial, echo=FALSE, fig.width=14, fig.height=10, eval=TRUE, cache=TRUE}
+```{rplotspatial, echo=FALSE, fig.width=14, fig.height=10, eval=TRUE, cache=FALSE}
 ggplot(gadm.df, aes(long,lat,group=group)) +
   geom_polygon(fill= "white", color = "Dark Gray") + 
   geom_point(data=kunta.dat, 
@@ -459,7 +459,7 @@ ggplot(gadm.df, aes(long,lat,group=group)) +
 Tekstiasiakirjat perustuen samaan koodipohjaan
 ========================================================
 
-```{r, eval=FALSE, cache=TRUE}
+```{r, eval=FALSE, cache=FALSE}
 library(knitr)
 knit("dokkari.Rmd") # into .md
 system("pandoc dokkari.md -o dokkari.pdf")
