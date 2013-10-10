@@ -2,7 +2,22 @@
 
 Täältä löytyy slaidien lähdekoodi, linkkejä sekä demon aineistot ja koodit.
 
-## Materiaalit
+## Demon analyysin toistamiseen vaadittava ohjelmistoympäristö
+
+Mikäli haluat toistaa kaikki demon jutut, pitää asennettuna olla R, RStudio sekä pandoc sekä latex. Seuraavassa ohjeet miten se tapahtuu eri käyttöjärjetelmiin:
+
+- [R-ohjelman asentaminen](http://ftp.sunet.se/pub/lang/CRAN/) - latauksen ja asennuksen kesto n. 60s.
+- [RStudion asentaminen](http://www.rstudio.com/ide/download/) - latauksen ja asennuksen kesto n. 60s.
+- [Pandoc:in asentaminen](http://johnmacfarlane.net/pandoc/installing.html)  - latauksen ja asennuksen kesto n. 30s.
+- [Latex:in asentaminen linuxiin, Mac OS X:Ã¤Ã¤n ja Windowsiin](http://www.latex-project.org/ftp.html) - latauksen ja asennuksen kesto n. 60 min.
+
+**Presentaatioiden tekeminen on mukana vasta 
+Rstudion `v0.98 Release Candidate`-versiossa. [Voit ladata käyttöjärjestelmääsi sopiva version täältä](http://www.rstudio.com/ide/download/preview)**
+
+Taustaa eri ohjelmista suomeksi täällä:
+[www.markuskainu.fi/workshop/toistettava/ennakko.html](http://www.markuskainu.fi/workshop/toistettava/ennakko.html)
+
+## Demon materiaalit
 
 - [Alustuksen slaidit](https://rawgithub.com/muuankarski/avointiede2013/master/openroadshow2013_slides.html#/)
 - [Täytä ennakkokysely!](https://docs.google.com/forms/d/1jFfj0d6vDF0kQWlJ6zuilh513y9-09hAuReNrENfBQg/viewform)
