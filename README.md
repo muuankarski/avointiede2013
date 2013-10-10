@@ -12,11 +12,10 @@ Mikäli haluat toistaa kaikki demon jutut, pitää asennettuna olla R, RStudio s
 - [Latex:in asentaminen linuxiin, Mac OS X:ään ja Windowsiin](http://www.latex-project.org/ftp.html) - latauksen ja asennuksen kesto n. 60 min.
 
 ### Huomioita
-- **Presentaatioiden tekeminen on mukana vasta 
-Rstudion `v0.98 Release Candidate`-versiossa. [Lataa käyttöjärjestelmääsi sopivan version täältä](http://www.rstudio.com/ide/download/preview)**
+
+- **Presentaatioiden tekeminen on mukana vasta Rstudion `v0.98 Release Candidate`-versiossa. [Lataa käyttöjärjestelmääsi sopivan version täältä](http://www.rstudio.com/ide/download/preview)**
 - [Ohjeita presentaatioiden tekoon](http://www.rstudio.com/ide/docs/presentations/overview)
-- Taustaa eri ohjelmista suomeksi täällä:
-[www.markuskainu.fi/workshop/toistettava/ennakko.html](http://www.markuskainu.fi/workshop/toistettava/ennakko.html)
+- Taustaa eri ohjelmista suomeksi täällä: [www.markuskainu.fi/workshop/toistettava/ennakko.html](http://www.markuskainu.fi/workshop/toistettava/ennakko.html)
 
 ## Demon materiaalit
 
